@@ -71,19 +71,45 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section style={sectionStyle}>
-        <h2 style={{ fontSize: 34, marginBottom: 24 }}>担当トレーナー</h2>
-        <div style={{ background: '#fff5f9', borderRadius: 24, padding: 28, lineHeight: 1.9 }}>
-          <h3 style={{ marginTop: 0, fontSize: 24 }}>加藤慎之介</h3>
-          <ul>
-            <li>ジュニアオリンピック3位（200m）</li>
-            <li>日本選手権出場（100m・200m）</li>
-            <li>岐南工業高校 → 東海大学</li>
-            <li>100kgのお客様を5カ月で-10kg＆東京マラソン完走までサポート</li>
-          </ul>
-          <p>現在はランニングを通してマラソン完走やボディメイクをメインにお客様をサポート中。</p>
-        </div>
-      </section>
+     <section style={sectionStyle}>
+  <h2 style={{ fontSize: 34, marginBottom: 24 }}>担当トレーナー</h2>
+  <div
+    style={{
+      background: '#fff5f9',
+      borderRadius: 24,
+      padding: 28,
+      lineHeight: 1.9,
+      display: 'grid',
+      gridTemplateColumns: '300px 1fr',
+      gap: 24,
+      alignItems: 'center',
+    }}
+  >
+    <img
+      src="/trainer.jpg"
+      alt="担当トレーナー"
+      style={{
+        width: '100%',
+        maxWidth: 300,
+        aspectRatio: '3 / 4',
+        objectFit: 'cover',
+        borderRadius: 20,
+      }}
+    />
+
+    <div>
+      <h3 style={{ marginTop: 0, fontSize: 24 }}>加藤慎之介</h3>
+      <ul>
+        <li>ジュニアオリンピック3位（200m）</li>
+        <li>日本選手権出場（100m・200m）</li>
+        <li>岐南工業高校 → 東海大学</li>
+        <li>100kgのお客様を5カ月で-10kg＆東京マラソン完走までサポート</li>
+      </ul>
+      <p>現在はランニングを通してマラソン完走やボディメイクをメインにお客様をサポート中。</p>
+    </div>
+  </div>
+</section>
+
 
       <section style={{ ...sectionStyle, paddingTop: 0 }}>
         <h2 style={{ fontSize: 34, marginBottom: 24 }}>対応エリア</h2>
