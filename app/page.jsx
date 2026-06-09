@@ -130,43 +130,114 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section style={{ ...sectionStyle, paddingTop: 0 }}>
-        <h2 style={{ fontSize: 34, marginBottom: 24 }}>料金表</h2>
-        <div style={{ display: 'grid', gap: 24 }}>
-          <div style={{ border: '1px solid #eee', borderRadius: 20, padding: 24 }}>
-            <h3>サブスクリプション / ランニングプラン</h3>
-            <ul>
-              <li>月4回: 34,000円（税込 37,400円）</li>
-              <li>月8回: 64,000円（税込 70,400円）</li>
-              <li>月12回: 90,000円（税込 99,000円）</li>
-            </ul>
-          </div>
-          <div style={{ border: '1px solid #eee', borderRadius: 20, padding: 24 }}>
-            <h3>ボディメイクプラン（ランニング＆筋力トレーニング）</h3>
-            <ul>
-              <li>月4回: 48,000円（税込 52,800円）</li>
-              <li>月8回: 92,000円（税込 101,200円）</li>
-              <li>月12回: 132,000円（税込 145,200円）</li>
-            </ul>
-          </div>
-          <div style={{ border: '1px solid #eee', borderRadius: 20, padding: 24 }}>
-            <h3>一括プラン</h3>
-            <ul>
-              <li>1回: 9,500円（税込 10,450円）</li>
-              <li>10回: 90,000円（税込 99,000円）</li>
-              <li>20回: 160,000円（税込 176,000円）</li>
-            </ul>
-          </div>
-          <div style={{ border: '1px solid #eee', borderRadius: 20, padding: 24 }}>
-            <h3>オンラインコーチング</h3>
-            <p>20,000円（税込 22,000円）/ 月</p>
-          </div>
-        </div>
-      </section>
+     <section style={{ ...sectionStyle, paddingTop: 0 }}>
+  <h2 style={{ fontSize: 34, marginBottom: 24 }}>料金表</h2>
 
-      <footer style={{ background: '#111', color: '#fff', textAlign: 'center', padding: '36px 24px', marginTop: 48 }}>
-        <p style={{ margin: 0 }}>LUKA! Running＆Workout</p>
-      </footer>
-    </main>
-  );
-}
+  <div style={{ display: 'grid', gap: 40 }}>
+    <div>
+      <div style={{ fontSize: 14, color: '#ff4081', fontWeight: 700, letterSpacing: '0.08em', marginBottom: 8 }}>
+        SUBSCRIPTION
+      </div>
+      <h3 style={{ margin: '0 0 18px', fontSize: 28 }}>サブスクリプション</h3>
+      <p style={{ margin: '0 0 20px', color: '#666' }}>ランニングプラン</p>
+
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 20 }}>
+        <div style={{ background: '#fff', border: '1px solid #f0d7e3', borderRadius: 24, padding: 24, boxShadow: '0 10px 30px rgba(0,0,0,0.05)' }}>
+          <div style={{ fontSize: 22, fontWeight: 700 }}>月4回</div>
+          <div style={{ marginTop: 8, color: '#777' }}>単価 8,500円</div>
+          <div style={{ marginTop: 20, fontSize: 34, fontWeight: 800, color: '#111' }}>34,000円</div>
+          <div style={{ marginTop: 6, color: '#666' }}>(税込 37,400円)</div>
+        </div>
+
+        <div style={{ background: '#fff5f9', border: '2px solid #ff4081', borderRadius: 24, padding: 24, boxShadow: '0 12px 36px rgba(255,64,129,0.16)', position: 'relative' }}>
+          <div style={{ position: 'absolute', top: -12, right: 16, background: '#ff4081', color: '#fff', borderRadius: 999, padding: '6px 12px', fontSize: 12, fontWeight: 700 }}>
+            おすすめ
+          </div>
+          <div style={{ fontSize: 22, fontWeight: 700 }}>月8回</div>
+          <div style={{ marginTop: 8, color: '#777' }}>単価 8,000円</div>
+          <div style={{ marginTop: 20, fontSize: 34, fontWeight: 800, color: '#111' }}>64,000円</div>
+          <div style={{ marginTop: 6, color: '#666' }}>(税込 70,400円)</div>
+        </div>
+
+        <div style={{ background: '#fff', border: '1px solid #f0d7e3', borderRadius: 24, padding: 24, boxShadow: '0 10px 30px rgba(0,0,0,0.05)' }}>
+          <div style={{ fontSize: 22, fontWeight: 700 }}>月12回</div>
+          <div style={{ marginTop: 8, color: '#777' }}>単価 7,500円</div>
+          <div style={{ marginTop: 20, fontSize: 34, fontWeight: 800, color: '#111' }}>90,000円</div>
+          <div style={{ marginTop: 6, color: '#666' }}>(税込 99,000円)</div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h3 style={{ margin: '0 0 12px', fontSize: 28 }}>ボディメイクプラン</h3>
+      <p style={{ margin: '0 0 20px', color: '#666' }}>ランニング＆筋力トレーニング / ※ジム利用料含む</p>
+
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 20 }}>
+        <div style={{ background: '#fff', border: '1px solid #f0d7e3', borderRadius: 24, padding: 24, boxShadow: '0 10px 30px rgba(0,0,0,0.05)' }}>
+          <div style={{ fontSize: 22, fontWeight: 700 }}>月4回</div>
+          <div style={{ marginTop: 8, color: '#777' }}>単価 12,000円</div>
+          <div style={{ marginTop: 20, fontSize: 34, fontWeight: 800, color: '#111' }}>48,000円</div>
+          <div style={{ marginTop: 6, color: '#666' }}>(税込 52,800円)</div>
+        </div>
+
+        <div style={{ background: '#fff5f9', border: '2px solid #ff4081', borderRadius: 24, padding: 24, boxShadow: '0 12px 36px rgba(255,64,129,0.16)', position: 'relative' }}>
+          <div style={{ position: 'absolute', top: -12, right: 16, background: '#111', color: '#fff', borderRadius: 999, padding: '6px 12px', fontSize: 12, fontWeight: 700 }}>
+            人気
+          </div>
+          <div style={{ fontSize: 22, fontWeight: 700 }}>月8回</div>
+          <div style={{ marginTop: 8, color: '#777' }}>単価 11,500円</div>
+          <div style={{ marginTop: 20, fontSize: 34, fontWeight: 800, color: '#111' }}>92,000円</div>
+          <div style={{ marginTop: 6, color: '#666' }}>(税込 101,200円)</div>
+        </div>
+
+        <div style={{ background: '#fff', border: '1px solid #f0d7e3', borderRadius: 24, padding: 24, boxShadow: '0 10px 30px rgba(0,0,0,0.05)' }}>
+          <div style={{ fontSize: 22, fontWeight: 700 }}>月12回</div>
+          <div style={{ marginTop: 8, color: '#777' }}>単価 11,000円</div>
+          <div style={{ marginTop: 20, fontSize: 34, fontWeight: 800, color: '#111' }}>132,000円</div>
+          <div style={{ marginTop: 6, color: '#666' }}>(税込 145,200円)</div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h3 style={{ margin: '0 0 12px', fontSize: 28 }}>一括プラン</h3>
+
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 20 }}>
+        <div style={{ background: '#fff', border: '1px solid #f0d7e3', borderRadius: 24, padding: 24, boxShadow: '0 10px 30px rgba(0,0,0,0.05)' }}>
+          <div style={{ fontSize: 22, fontWeight: 700 }}>1回</div>
+          <div style={{ marginTop: 8, color: '#777' }}>※ジム利用料金別</div>
+          <div style={{ marginTop: 4, color: '#777' }}>単価 9,500円</div>
+          <div style={{ marginTop: 20, fontSize: 34, fontWeight: 800, color: '#111' }}>9,500円</div>
+          <div style={{ marginTop: 6, color: '#666' }}>(税込 10,450円)</div>
+        </div>
+
+        <div style={{ background: '#fff', border: '1px solid #f0d7e3', borderRadius: 24, padding: 24, boxShadow: '0 10px 30px rgba(0,0,0,0.05)' }}>
+          <div style={{ fontSize: 22, fontWeight: 700 }}>10回</div>
+          <div style={{ marginTop: 8, color: '#777' }}>※ジム利用料金別</div>
+          <div style={{ marginTop: 4, color: '#777' }}>単価 9,000円</div>
+          <div style={{ marginTop: 20, fontSize: 34, fontWeight: 800, color: '#111' }}>90,000円</div>
+          <div style={{ marginTop: 6, color: '#666' }}>(税込 99,000円)</div>
+        </div>
+
+        <div style={{ background: '#fff5f9', border: '2px solid #ff4081', borderRadius: 24, padding: 24, boxShadow: '0 12px 36px rgba(255,64,129,0.16)', position: 'relative' }}>
+          <div style={{ position: 'absolute', top: -12, right: 16, background: '#ff4081', color: '#fff', borderRadius: 999, padding: '6px 12px', fontSize: 12, fontWeight: 700 }}>
+            お得
+          </div>
+          <div style={{ fontSize: 22, fontWeight: 700 }}>20回</div>
+          <div style={{ marginTop: 8, color: '#777' }}>※ジム利用料無料</div>
+          <div style={{ marginTop: 4, color: '#777' }}>単価 8,000円</div>
+          <div style={{ marginTop: 20, fontSize: 34, fontWeight: 800, color: '#111' }}>160,000円</div>
+          <div style={{ marginTop: 6, color: '#666' }}>(税込 176,000円)</div>
+        </div>
+      </div>
+    </div>
+
+    <div style={{ background: 'linear-gradient(135deg, #111 0%, #333 100%)', color: '#fff', borderRadius: 28, padding: 28 }}>
+      <div style={{ fontSize: 14, opacity: 0.8, marginBottom: 8 }}>ONLINE COACHING</div>
+      <h3 style={{ margin: '0 0 10px', fontSize: 28 }}>オンラインコーチング</h3>
+      <p style={{ margin: '0 0 18px', opacity: 0.85 }}>月額プラン / どこでも受けられるオンライン指導</p>
+      <div style={{ fontSize: 40, fontWeight: 800 }}>20,000円</div>
+      <div style={{ marginTop: 6, opacity: 0.85 }}>(税込 22,000円) / 月</div>
+    </div>
+  </div>
+</section>
