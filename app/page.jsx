@@ -133,7 +133,156 @@ export default function HomePage() {
   </div>
 </section>
 
-function ContentIcon({ type }) {
+ <section
+  style={{
+    maxWidth: 1100,
+    margin: "0 auto",
+    padding: "72px 24px",
+    paddingTop: 0,
+  }}
+>
+  <div style={{ textAlign: "center", marginBottom: 32 }}>
+    <h2
+      style={{
+        fontSize: 34,
+        margin: 0,
+        color: "#e91e63",
+        fontWeight: 800,
+        letterSpacing: "0.04em",
+      }}
+    >
+      指導内容
+    </h2>
+    <div
+      style={{
+        width: 72,
+        height: 4,
+        background: "#e91e63",
+        borderRadius: 999,
+        margin: "14px auto 0",
+      }}
+    />
+  </div>
+
+  <div
+    style={{
+      background: "#fff",
+      borderRadius: 28,
+      padding: 36,
+      boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
+      lineHeight: 1.9,
+    }}
+  >
+    <div
+      style={{
+        borderLeft: "8px solid #e91e63",
+        paddingLeft: 18,
+        marginBottom: 24,
+      }}
+    >
+      <p
+        style={{
+          margin: 0,
+          color: "#e91e63",
+          fontSize: 20,
+          fontWeight: 800,
+          lineHeight: 1.6,
+        }}
+      >
+        ランニング指導を軸に、必要に応じて筋力トレーニングも取り入れます。
+      </p>
+    </div>
+
+    <p style={{ margin: "0 0 24px", fontSize: 16, color: "#333" }}>
+      マンツーマンランニング指導を行っています。遅筋繊維を鍛えると効率的に酸素を利用し脂肪を燃やすため、
+      基礎代謝も上がりダイエットにも最適です。
+    </p>
+
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: "repeat(2, minmax(0, 1fr))",
+        gap: 16,
+        marginBottom: 28,
+      }}
+    >
+      {[
+        ["◷", "対面60〜70分対応（ボディメイクプランは90分又は、午前＆午後に分けて対応）"],
+        ["💬", "LINEでの食事案内有り"],
+        ["📅", "毎日対応"],
+        ["🗓️", "予約 7:00〜21:00"],
+        ["📝", "トレーニングメニュー作成"],
+        ["🖥️", "オンラインコーチングも対応（50分）"],
+      ].map(([icon, text], index) => (
+        <div
+          key={index}
+          style={{
+            background: "#fff1f6",
+            borderRadius: 18,
+            padding: "18px 16px",
+            display: "flex",
+            alignItems: "center",
+            gap: 12,
+            minHeight: 78,
+          }}
+        >
+          <div
+            style={{
+              width: 40,
+              height: 40,
+              minWidth: 40,
+              borderRadius: 12,
+              background: "#e91e63",
+              color: "#fff",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              fontSize: 18,
+              fontWeight: 700,
+            }}
+          >
+            {icon}
+          </div>
+          <div
+            style={{
+              color: "#d81b60",
+              fontSize: 16,
+              fontWeight: 700,
+              lineHeight: 1.7,
+            }}
+          >
+            {text}
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <p style={{ margin: "0 0 20px", fontSize: 16, color: "#333" }}>
+      遅筋繊維は鍛えても筋肥大しないためヒップアップや腹筋の引き締めなど、
+      ムキムキになりたくない部位を細く引き締めるのに適しています。
+    </p>
+
+    <p style={{ margin: "0 0 24px", fontSize: 16, color: "#333" }}>
+      パーソナルランニング指導に加え、食事指導も行いスタミナを上げながらボディメイクも行うプログラムを提供。
+    </p>
+
+    <div
+      style={{
+        background: "#fff1f6",
+        borderRadius: 18,
+        padding: "22px 16px",
+        textAlign: "center",
+        color: "#e91e63",
+        fontSize: 18,
+        fontWeight: 800,
+      }}
+    >
+      3食抜かずにダイエットを行います。
+    </div>
+  </div>
+</section>
+ 
+      function ContentIcon({ type }) {
   const common = {
     width: 22,
     height: 22,
