@@ -111,24 +111,67 @@ export default function HomePage() {
 </section>
 
 
-      <section style={{ ...sectionStyle, paddingTop: 0 }}>
-        <h2 style={{ fontSize: 34, marginBottom: 24 }}>対応エリア</h2>
-        <div style={{ display: 'grid', gap: 12, fontSize: 18 }}>
-          <div>📍 皇居周り</div>
-          <div>📍 隅田川周り</div>
-          <div style={{ color: '#666', fontSize: 14 }}>その他スポットは要相談。別途交通費を頂く可能性もあります。</div>
-        </div>
-      </section>
+      <section style={{ maxWidth: 1100, margin: "0 auto", padding: "72px 24px", paddingTop: 0 }}>
+  <h2 style={{ fontSize: 34, marginBottom: 24 }}>対応エリア</h2>
 
-      <section style={{ ...sectionStyle, paddingTop: 0 }}>
-        <h2 style={{ fontSize: 34, marginBottom: 24 }}>指導内容</h2>
-        <div style={{ display: 'grid', gap: 16, lineHeight: 1.9 }}>
-          <p>ランニング指導を軸に、必要に応じて筋力トレーニングも取り入れます。</p>
-          <p>マンツーマンランニング指導を行っています。遅筋繊維を鍛えると効率的に酸素を利用し脂肪を燃やすため基礎代謝も上がりダイエットにも最適です。</p>
-          <p>対面60〜70分対応（ボディメイクプランは90分又は午前＆午後に分けて対応）／LINEでの食事案内有り／トレーニングメニュー作成／オンラインコーチングも対応（50分）。</p>
-          <p>パーソナルランニング指導に加え、食事指導も行いスタミナを上げながらボディメイクも行うプログラムを提供。3食抜かずにダイエットを行います。</p>
-        </div>
-      </section>
+  <div
+    style={{
+      background: "#fff5f9",
+      borderRadius: 24,
+      padding: 28,
+      lineHeight: 1.9,
+      boxShadow: "0 10px 30px rgba(0,0,0,0.05)",
+    }}
+  >
+    <ul style={{ margin: 0, paddingLeft: 20, fontSize: 18 }}>
+      <li>📍皇居周り</li>
+      <li>📍隅田川周り</li>
+    </ul>
+    <p style={{ marginTop: 14, color: "#666", fontSize: 14 }}>
+      （その他スポットは要相談。別途交通費を頂く可能性もあります。）
+    </p>
+  </div>
+</section>
+
+<section style={{ maxWidth: 1100, margin: "0 auto", padding: "72px 24px", paddingTop: 0 }}>
+  <h2 style={{ fontSize: 34, marginBottom: 24 }}>指導内容</h2>
+
+  <div
+    style={{
+      background: "#fff",
+      border: "1px solid #f0d7e3",
+      borderRadius: 24,
+      padding: 28,
+      lineHeight: 1.9,
+      boxShadow: "0 10px 30px rgba(0,0,0,0.05)",
+    }}
+  >
+    <p>ランニング指導を軸に、必要に応じて筋力トレーニングも取り入れます。</p>
+
+    <p>
+      マンツーマンランニング指導を行っています。遅筋繊維を鍛えると効率的に酸素を利用し脂肪を燃やすため、
+      基礎代謝も上がりダイエットにも最適です。
+    </p>
+
+    <ul style={{ paddingLeft: 20, margin: "16px 0" }}>
+      <li>対面60〜70分対応（ボディメイクプランは90分又は午前＆午後に分けて対応）</li>
+      <li>LINEでの食事案内有り</li>
+      <li>トレーニングメニュー作成</li>
+      <li>オンラインコーチングも対応（50分）</li>
+    </ul>
+
+    <p>
+      遅筋繊維は鍛えても筋肥大しないため、ヒップアップや腹筋の引き締めなど、
+      ムキムキになりたくない部位を細く引き締めるのに適しています。
+    </p>
+
+    <p style={{ marginBottom: 0 }}>
+      パーソナルランニング指導に加え、食事指導も行いスタミナを上げながらボディメイクも行うプログラムを提供。
+      3食抜かずにダイエットを行います。
+    </p>
+  </div>
+</section>
+
 
      <section style={{ ...sectionStyle, paddingTop: 0 }}>
   <h2 style={{ fontSize: 34, marginBottom: 24 }}>料金表</h2>
