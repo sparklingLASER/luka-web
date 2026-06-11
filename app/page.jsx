@@ -133,44 +133,339 @@ export default function HomePage() {
   </div>
 </section>
 
-<section style={{ maxWidth: 1100, margin: "0 auto", padding: "72px 24px", paddingTop: 0 }}>
-  <h2 style={{ fontSize: 34, marginBottom: 24 }}>指導内容</h2>
+function ContentIcon({ type }) {
+  const common = {
+    width: 22,
+    height: 22,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "#fff",
+    strokeWidth: 2,
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+  };
 
-  <div
-    style={{
-      background: "#fff",
-      border: "1px solid #f0d7e3",
-      borderRadius: 24,
-      padding: 28,
-      lineHeight: 1.9,
-      boxShadow: "0 10px 30px rgba(0,0,0,0.05)",
-    }}
-  >
-    <p>ランニング指導を軸に、必要に応じて筋力トレーニングも取り入れます。</p>
+  if (type === "clock") {
+    return (
+      <svg {...common}>
+        <circle cx="12" cy="12" r="9" />
+        <path d="M12 7v5l3 2" />
+      </svg>
+    );
+  }
 
-    <p>
-      マンツーマンランニング指導を行っています。遅筋繊維を鍛えると効率的に酸素を利用し脂肪を燃やすため、
-      基礎代謝も上がりダイエットにも最適です。
-    </p>
+  if (type === "message") {
+    return (
+      <svg {...common}>
+        <path d="M21 12a8.5 8.5 0 0 1-8.5 8.5A8.38 8.38 0 0 1 8 19.2L3 20.5l1.3-4.7A8.38 8.38 0 0 1 3.5 12 8.5 8.5 0 0 1 12 3.5 8.5 8.5 0 0 1 21 12Z" />
+        <path d="M8.5 12h.01" />
+        <path d="M12 12h.01" />
+        <path d="M15.5 12h.01" />
+      </svg>
+    );
+  }
 
-    <ul style={{ paddingLeft: 20, margin: "16px 0" }}>
-      <li>対面60〜70分対応（ボディメイクプランは90分又は午前＆午後に分けて対応）</li>
-      <li>LINEでの食事案内有り</li>
-      <li>トレーニングメニュー作成</li>
-      <li>オンラインコーチングも対応（50分）</li>
-    </ul>
+  if (type === "calendar") {
+    return (
+      <svg {...common}>
+        <rect x="3" y="5" width="18" height="16" rx="2" />
+        <path d="M16 3v4" />
+        <path d="M8 3v4" />
+        <path d="M3 10h18" />
+      </svg>
+    );
+  }
 
-    <p>
-      遅筋繊維は鍛えても筋肥大しないため、ヒップアップや腹筋の引き締めなど、
-      ムキムキになりたくない部位を細く引き締めるのに適しています。
-    </p>
+  if (type === "clipboard") {
+    return (
+      <svg {...common}>
+        <rect x="6" y="4" width="12" height="17" rx="2" />
+        <path d="M9 4.5h6" />
+        <path d="M9 8h6" />
+      </svg>
+    );
+  }
 
-    <p style={{ marginBottom: 0 }}>
-      パーソナルランニング指導に加え、食事指導も行いスタミナを上げながらボディメイクも行うプログラムを提供。
-      3食抜かずにダイエットを行います。
-    </p>
-  </div>
-</section>
+  if (type === "monitor") {
+    return (
+      <svg {...common}>
+        <rect x="3" y="4" width="18" height="13" rx="2" />
+        <path d="M8 20h8" />
+        <path d="M12 17v3" />
+      </svg>
+    );
+  }
+
+  return null;
+}
+
+function InfoCard({ icon, text }) {
+  return (
+    <div className="guide-info-card">
+      <div className="guide-info-icon">
+        <ContentIcon type={icon} />
+      </div>
+      <div className="guide-info-text">{text}</div>
+    </div>
+  );
+}
+
+export default function Page() {
+  return (
+    <>
+      {/* 他のセクション */}
+
+      <section className="guide-section">
+        <div className="guide-heading-wrap">
+          <h2 className="guide-heading">指導内容</h2>
+          <div className="guide-heading-line" />
+        </div>
+
+        <div className="guide-main-card">
+          <div className="guide-lead">
+            ランニング指導を軸に、必要に応じて筋力トレーニングも取り入れます。
+          </div>
+
+          <p className="guide-text top">
+            マンツーマンランニング指導を行っています。遅筋繊維を鍛えると効率的に酸素を利用し脂肪を燃やすため基礎代謝も上がりダイエットにも最適です。
+          </p>
+
+          <div className="guide-grid">
+            <InfoCard
+              icon="clock"
+              text="対面60〜70分対応（ボディメイクプランは90分又は、午前＆午後に分けて対応）"
+            />
+            <InfoCard
+              icon="message"
+              text="LINEでの食事案内有り"
+            />
+            <InfoCard
+              icon="calendar"
+              text="毎日対応"
+            />
+            <InfoCard
+              icon="calendar"
+              text="予約 7:00〜21:00"
+            />
+            <InfoCard
+              icon="clipboard"
+              text="トレーニングメニュー作成"
+            />
+            <InfoCard
+              icon="monitor"
+              text="オンラインコーチングも対応（50分）"
+            />
+          </div>
+
+          <p className="guide-text">
+            遅筋繊維は鍛えても筋肥大しないためヒップアップや腹筋の引き締めなどムキムキになりたくない部位を細く引き締めるのに適しています。
+          </p>
+
+          <p className="guide-text">
+            パーソナルランニング指導に加え、食事指導も行いスタミナを上げながらボディメイクも行うプログラムを提供。
+          </p>
+
+          <div className="guide-bottom-box">
+            3食抜かずにダイエットを行います。
+          </div>
+        </div>
+      </section>
+
+      <style jsx>{`
+        .guide-section {
+          padding: 88px 24px 110px;
+          background:
+            radial-gradient(circle at top, rgba(255, 72, 140, 0.06), transparent 38%),
+            linear-gradient(to bottom, #fffefe, #fff9fc);
+        }
+
+        .guide-heading-wrap {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 44px;
+        }
+
+        .guide-heading {
+          margin: 0;
+          font-size: clamp(42px, 5vw, 64px);
+          font-weight: 800;
+          letter-spacing: 0.04em;
+          color: #ea2d78;
+          line-height: 1.1;
+        }
+
+        .guide-heading-line {
+          width: 88px;
+          height: 6px;
+          border-radius: 999px;
+          background: #ea2d78;
+          margin-top: 16px;
+        }
+
+        .guide-main-card {
+          width: min(940px, 100%);
+          margin: 0 auto;
+          background: #ffffff;
+          border-radius: 28px;
+          padding: 52px 52px 46px;
+          box-shadow:
+            0 20px 60px rgba(233, 45, 120, 0.08),
+            0 8px 24px rgba(0, 0, 0, 0.06);
+        }
+
+        .guide-lead {
+          position: relative;
+          font-size: 24px;
+          font-weight: 800;
+          line-height: 1.55;
+          color: #ea2d78;
+          padding-left: 28px;
+          margin-bottom: 30px;
+        }
+
+        .guide-lead::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 6px;
+          width: 8px;
+          height: calc(100% - 12px);
+          border-radius: 999px;
+          background: #ea2d78;
+        }
+
+        .guide-text {
+          margin: 0;
+          font-size: 17px;
+          line-height: 2;
+          color: #333;
+        }
+
+        .guide-text.top {
+          margin-bottom: 26px;
+        }
+
+        .guide-grid {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 16px 18px;
+          margin-bottom: 28px;
+        }
+
+        .guide-info-card {
+          display: flex;
+          align-items: center;
+          gap: 14px;
+          min-height: 86px;
+          padding: 18px 18px;
+          background: linear-gradient(180deg, #fff1f6 0%, #ffeaf2 100%);
+          border-radius: 18px;
+        }
+
+        .guide-info-icon {
+          flex: 0 0 40px;
+          width: 40px;
+          height: 40px;
+          border-radius: 12px;
+          background: #ea2d78;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 0 8px 18px rgba(234, 45, 120, 0.18);
+        }
+
+        .guide-info-text {
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 1.7;
+          color: #d81b68;
+        }
+
+        .guide-text + .guide-text {
+          margin-top: 20px;
+        }
+
+        .guide-bottom-box {
+          margin-top: 28px;
+          background: linear-gradient(180deg, #fff1f6 0%, #ffeaf2 100%);
+          border-radius: 18px;
+          min-height: 78px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 18px 20px;
+          font-size: 19px;
+          font-weight: 800;
+          line-height: 1.6;
+          color: #ea2d78;
+        }
+
+        @media (max-width: 900px) {
+          .guide-main-card {
+            padding: 36px 24px 30px;
+            border-radius: 24px;
+          }
+
+          .guide-lead {
+            font-size: 20px;
+            padding-left: 22px;
+          }
+
+          .guide-grid {
+            grid-template-columns: 1fr;
+          }
+
+          .guide-info-card {
+            min-height: 78px;
+          }
+        }
+
+        @media (max-width: 640px) {
+          .guide-section {
+            padding: 64px 16px 80px;
+          }
+
+          .guide-heading {
+            font-size: 36px;
+          }
+
+          .guide-heading-line {
+            width: 72px;
+            height: 5px;
+            margin-top: 12px;
+          }
+
+          .guide-main-card {
+            padding: 28px 18px 24px;
+            border-radius: 22px;
+          }
+
+          .guide-lead {
+            font-size: 18px;
+            margin-bottom: 22px;
+          }
+
+          .guide-text {
+            font-size: 15px;
+            line-height: 1.9;
+          }
+
+          .guide-info-text {
+            font-size: 15px;
+          }
+
+          .guide-bottom-box {
+            font-size: 17px;
+            min-height: 70px;
+          }
+        }
+      `}</style>
+    </>
+  );
+}
+
 
 
      <section style={{ ...sectionStyle, paddingTop: 0 }}>
