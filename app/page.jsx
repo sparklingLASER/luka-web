@@ -434,7 +434,7 @@ export default function HomePage() {
                 }}
               >
                 <div style={{ fontSize: 22, fontWeight: 700 }}>月4回</div>
-                <div style={{ marginTop: 8, color: '#777' }}>単価 8,500円</div>
+                <div style={{ marginTop: 8, color: '#777' }}></div>
                 <div style={{ marginTop: 20, fontSize: 34, fontWeight: 800, color: '#111' }}>
                   34,000円
                 </div>
@@ -468,7 +468,7 @@ export default function HomePage() {
                 </div>
 
                 <div style={{ fontSize: 22, fontWeight: 700 }}>月8回</div>
-                <div style={{ marginTop: 8, color: '#777' }}>単価 8,000円</div>
+                <div style={{ marginTop: 8, color: '#777' }}></div>
                 <div style={{ marginTop: 20, fontSize: 34, fontWeight: 800, color: '#111' }}>
                   64,000円
                 </div>
@@ -485,7 +485,7 @@ export default function HomePage() {
                 }}
               >
                 <div style={{ fontSize: 22, fontWeight: 700 }}>月12回</div>
-                <div style={{ marginTop: 8, color: '#777' }}>単価 7,500円</div>
+                <div style={{ marginTop: 8, color: '#777' }}</div>
                 <div style={{ marginTop: 20, fontSize: 34, fontWeight: 800, color: '#111' }}>
                   90,000円
                 </div>
@@ -497,7 +497,7 @@ export default function HomePage() {
           <div>
             <h3 style={{ margin: '0 0 12px', fontSize: 28 }}>ボディメイクプラン</h3>
             <p style={{ margin: '0 0 20px', color: '#666' }}>
-              ランニング＆筋力トレーニング / ※ジム利用料含む
+              
             </p>
 
             <div
@@ -517,7 +517,7 @@ export default function HomePage() {
                 }}
               >
                 <div style={{ fontSize: 22, fontWeight: 700 }}>月4回</div>
-                <div style={{ marginTop: 8, color: '#777' }}>単価 12,000円</div>
+                <div style={{ marginTop: 8, color: '#777' }}></div>
                 <div style={{ marginTop: 20, fontSize: 34, fontWeight: 800, color: '#111' }}>
                   48,000円
                 </div>
@@ -551,7 +551,7 @@ export default function HomePage() {
                 </div>
 
                 <div style={{ fontSize: 22, fontWeight: 700 }}>月8回</div>
-                <div style={{ marginTop: 8, color: '#777' }}>単価 11,500円</div>
+                <div style={{ marginTop: 8, color: '#777' }}></div>
                 <div style={{ marginTop: 20, fontSize: 34, fontWeight: 800, color: '#111' }}>
                   92,000円
                 </div>
@@ -568,7 +568,7 @@ export default function HomePage() {
                 }}
               >
                 <div style={{ fontSize: 22, fontWeight: 700 }}>月12回</div>
-                <div style={{ marginTop: 8, color: '#777' }}>単価 11,000円</div>
+                <div style={{ marginTop: 8, color: '#777' }}></div>
                 <div style={{ marginTop: 20, fontSize: 34, fontWeight: 800, color: '#111' }}>
                   132,000円
                 </div>
@@ -597,7 +597,7 @@ export default function HomePage() {
                 }}
               >
                 <div style={{ fontSize: 22, fontWeight: 700 }}>1回</div>
-                <div style={{ marginTop: 8, color: '#777' }}>※ジム利用料金別</div>
+                <div style={{ marginTop: 8, color: '#777' }}></div>
                 <div style={{ marginTop: 4, color: '#777' }}>単価 9,500円</div>
                 <div style={{ marginTop: 20, fontSize: 34, fontWeight: 800, color: '#111' }}>
                   9,500円
@@ -615,7 +615,7 @@ export default function HomePage() {
                 }}
               >
                 <div style={{ fontSize: 22, fontWeight: 700 }}>10回</div>
-                <div style={{ marginTop: 8, color: '#777' }}>※ジム利用料金別</div>
+                <div style={{ marginTop: 8, color: '#777' }}></div>
                 <div style={{ marginTop: 4, color: '#777' }}>単価 9,000円</div>
                 <div style={{ marginTop: 20, fontSize: 34, fontWeight: 800, color: '#111' }}>
                   90,000円
@@ -650,7 +650,7 @@ export default function HomePage() {
                 </div>
 
                 <div style={{ fontSize: 22, fontWeight: 700 }}>20回</div>
-                <div style={{ marginTop: 8, color: '#777' }}>※ジム利用料無料</div>
+                <div style={{ marginTop: 8, color: '#777' }}></div>
                 <div style={{ marginTop: 4, color: '#777' }}>単価 8,000円</div>
                 <div style={{ marginTop: 20, fontSize: 34, fontWeight: 800, color: '#111' }}>
                   160,000円
