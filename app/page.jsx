@@ -174,6 +174,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* 担当トレーナー */}
       <section style={sectionStyle}>
         <h2 style={{ fontSize: 34, marginBottom: 24 }}>担当トレーナー</h2>
 
@@ -184,7 +185,8 @@ export default function HomePage() {
             padding: 28,
             lineHeight: 1.9,
             display: 'grid',
-            gridTemplateColumns: '300px 1fr',
+            // 👇 スマホなら1列、PCなら写真(300px)とテキスト(1fr)に自動調整されるように修正！
+            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
             gap: 24,
             alignItems: 'center',
           }}
@@ -198,12 +200,13 @@ export default function HomePage() {
               aspectRatio: '3 / 4',
               objectFit: 'cover',
               borderRadius: 20,
+              margin: '0 auto', // スマホで中央に配置されるように調整
             }}
           />
 
           <div>
             <h3 style={{ marginTop: 0, fontSize: 24 }}>加藤慎之介</h3>
-            <ul>
+            <ul style={{ paddingLeft: 20 }}>
               <li>ジュニアオリンピック3位（200m）</li>
               <li>日本選手権出場（100m・200m）</li>
               <li>岐南工業高校 → 東海大学</li>
@@ -216,6 +219,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* 対応エリア */}
       <section
         style={{
           maxWidth: 1100,
@@ -246,6 +250,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* 指導内容 */}
       <section
         style={{
           maxWidth: 1100,
@@ -315,7 +320,8 @@ export default function HomePage() {
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(2, minmax(0, 1fr))',
+              // 👇 ここを repeat(2, ...) から auto-fit に変更！スマホで綺麗に縦1列になります
+              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
               gap: 16,
               marginBottom: 28,
             }}
@@ -377,7 +383,7 @@ export default function HomePage() {
             ムキムキになりたくない部位を細く引き締めるのに適しています。
           </p>
 
-                                      <p style={{ margin: '0 0 24px', fontSize: 16, color: '#333' }}>
+          <p style={{ margin: '0 0 24px', fontSize: 16, color: '#333' }}>
             パーソナルランニング指導に加え、食事指導も行いスタミナを上げながらボディメイクも行うプログラムを提供。
           </p>
 
