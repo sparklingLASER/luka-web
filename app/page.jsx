@@ -377,304 +377,306 @@ export default function HomePage() {
             ムキムキになりたくない部位を細く引き締めるのに適しています。
           </p>
 
-          <p style={{ margin: '0 0 24px', fontSize: 16, color: '#333' }}>
+                            <p style={{ margin: '0 0 24px', fontSize: 16, color: '#333' }}>
             パーソナルランニング指導に加え、食事指導も行いスタミナを上げながらボディメイクも行うプログラムを提供。
           </p>
 
-          <div
-            style={{
-              background: '#fff1f6',
-              borderRadius: 18,
-              padding: '22px 16px',
-              textAlign: 'center',
-              color: '#e91e63',
-              fontSize: 18,
-              fontWeight: 800,
-            }}
-          >
+          <p style={{ margin: 0, fontSize: 16, color: '#333', fontWeight: 700 }}>
             3食抜かずにダイエットを行います。
-          </div>
+          </p>
         </div>
       </section>
 
-      <section style={{ ...sectionStyle, paddingTop: 0 }}>
-        <h2 style={{ fontSize: 34, marginBottom: 24 }}>料金表</h2>
-
-        <div style={{ display: 'grid', gap: 40 }}>
-          <div>
-            <div
-              style={{
-                fontSize: 14,
-                color: '#ff4081',
-                fontWeight: 700,
-                letterSpacing: '0.08em',
-                marginBottom: 8,
-              }}
-            >
-              SUBSCRIPTION
-            </div>
-
-            <h3 style={{ margin: '0 0 18px', fontSize: 28 }}>サブスクリプション</h3>
-            <p style={{ margin: '0 0 20px', color: '#666' }}>ランニングプラン</p>
-
-            <div
-              style={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
-                gap: 20,
-              }}
-            >
-              <div
-                style={{
-                  background: '#fff',
-                  border: '1px solid #f0d7e3',
-                  borderRadius: 24,
-                  padding: 24,
-                  boxShadow: '0 10px 30px rgba(0,0,0,0.05)',
-                }}
-              >
-                <div style={{ fontSize: 22, fontWeight: 700 }}>月4回</div>
-                <div style={{ marginTop: 8, color: '#777' }}></div>
-                <div style={{ marginTop: 20, fontSize: 34, fontWeight: 800, color: '#111' }}>
-                  34,000円
-                </div>
-                <div style={{ marginTop: 6, color: '#666' }}>(税込 37,400円)</div>
-              </div>
-
-              <div
-                style={{
-                  background: '#fff5f9',
-                  border: '2px solid #ff4081',
-                  borderRadius: 24,
-                  padding: 24,
-                  boxShadow: '0 12px 36px rgba(255,64,129,0.16)',
-                  position: 'relative',
-                }}
-              >
-                <div
-                  style={{
-                    position: 'absolute',
-                    top: -12,
-                    right: 16,
-                    background: '#ff4081',
-                    color: '#fff',
-                    borderRadius: 999,
-                    padding: '6px 12px',
-                    fontSize: 12,
-                    fontWeight: 700,
-                  }}
-                >
-                  おすすめ
-                </div>
-
-                <div style={{ fontSize: 22, fontWeight: 700 }}>月8回</div>
-                <div style={{ marginTop: 8, color: '#777' }}></div>
-                <div style={{ marginTop: 20, fontSize: 34, fontWeight: 800, color: '#111' }}>
-                  64,000円
-                </div>
-                <div style={{ marginTop: 6, color: '#666' }}>(税込 70,400円)</div>
-              </div>
-
-              <div
-                style={{
-                  background: '#fff',
-                  border: '1px solid #f0d7e3',
-                  borderRadius: 24,
-                  padding: 24,
-                  boxShadow: '0 10px 30px rgba(0,0,0,0.05)',
-                }}
-              >
-                <div style={{ fontSize: 22, fontWeight: 700 }}>月12回</div>
-                <div style={{ marginTop: 8, color: '#777' }}</div>
-                <div style={{ marginTop: 20, fontSize: 34, fontWeight: 800, color: '#111' }}>
-                  90,000円
-                </div>
-                <div style={{ marginTop: 6, color: '#666' }}>(税込 99,000円)</div>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <h3 style={{ margin: '0 0 12px', fontSize: 28 }}>ボディメイクプラン</h3>
-            <p style={{ margin: '0 0 20px', color: '#666' }}>
-              
-            </p>
-
-            <div
-              style={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
-                gap: 20,
-              }}
-            >
-              <div
-                style={{
-                  background: '#fff',
-                  border: '1px solid #f0d7e3',
-                  borderRadius: 24,
-                  padding: 24,
-                  boxShadow: '0 10px 30px rgba(0,0,0,0.05)',
-                }}
-              >
-                <div style={{ fontSize: 22, fontWeight: 700 }}>月4回</div>
-                <div style={{ marginTop: 8, color: '#777' }}></div>
-                <div style={{ marginTop: 20, fontSize: 34, fontWeight: 800, color: '#111' }}>
-                  48,000円
-                </div>
-                <div style={{ marginTop: 6, color: '#666' }}>(税込 52,800円)</div>
-              </div>
-
-              <div
-                style={{
-                  background: '#fff5f9',
-                  border: '2px solid #ff4081',
-                  borderRadius: 24,
-                  padding: 24,
-                  boxShadow: '0 12px 36px rgba(255,64,129,0.16)',
-                  position: 'relative',
-                }}
-              >
-                <div
-                  style={{
-                    position: 'absolute',
-                    top: -12,
-                    right: 16,
-                    background: '#111',
-                    color: '#fff',
-                    borderRadius: 999,
-                    padding: '6px 12px',
-                    fontSize: 12,
-                    fontWeight: 700,
-                  }}
-                >
-                  人気
-                </div>
-
-                <div style={{ fontSize: 22, fontWeight: 700 }}>月8回</div>
-                <div style={{ marginTop: 8, color: '#777' }}></div>
-                <div style={{ marginTop: 20, fontSize: 34, fontWeight: 800, color: '#111' }}>
-                  92,000円
-                </div>
-                <div style={{ marginTop: 6, color: '#666' }}>(税込 101,200円)</div>
-              </div>
-
-              <div
-                style={{
-                  background: '#fff',
-                  border: '1px solid #f0d7e3',
-                  borderRadius: 24,
-                  padding: 24,
-                  boxShadow: '0 10px 30px rgba(0,0,0,0.05)',
-                }}
-              >
-                <div style={{ fontSize: 22, fontWeight: 700 }}>月12回</div>
-                <div style={{ marginTop: 8, color: '#777' }}></div>
-                <div style={{ marginTop: 20, fontSize: 34, fontWeight: 800, color: '#111' }}>
-                  132,000円
-                </div>
-                <div style={{ marginTop: 6, color: '#666' }}>(税込 145,200円)</div>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <h3 style={{ margin: '0 0 12px', fontSize: 28 }}>一括プラン</h3>
-
-            <div
-              style={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
-                gap: 20,
-              }}
-            >
-              <div
-                style={{
-                  background: '#fff',
-                  border: '1px solid #f0d7e3',
-                  borderRadius: 24,
-                  padding: 24,
-                  boxShadow: '0 10px 30px rgba(0,0,0,0.05)',
-                }}
-              >
-                <div style={{ fontSize: 22, fontWeight: 700 }}>1回</div>
-                <div style={{ marginTop: 8, color: '#777' }}></div>
-                <div style={{ marginTop: 4, color: '#777' }}>単価 9,500円</div>
-                <div style={{ marginTop: 20, fontSize: 34, fontWeight: 800, color: '#111' }}>
-                  9,500円
-                </div>
-                <div style={{ marginTop: 6, color: '#666' }}>(税込 10,450円)</div>
-              </div>
-
-              <div
-                style={{
-                  background: '#fff',
-                  border: '1px solid #f0d7e3',
-                  borderRadius: 24,
-                  padding: 24,
-                  boxShadow: '0 10px 30px rgba(0,0,0,0.05)',
-                }}
-              >
-                <div style={{ fontSize: 22, fontWeight: 700 }}>10回</div>
-                <div style={{ marginTop: 8, color: '#777' }}></div>
-                <div style={{ marginTop: 4, color: '#777' }}>単価 9,000円</div>
-                <div style={{ marginTop: 20, fontSize: 34, fontWeight: 800, color: '#111' }}>
-                  90,000円
-                </div>
-                <div style={{ marginTop: 6, color: '#666' }}>(税込 99,000円)</div>
-              </div>
-
-              <div
-                style={{
-                  background: '#fff5f9',
-                  border: '2px solid #ff4081',
-                  borderRadius: 24,
-                  padding: 24,
-                  boxShadow: '0 12px 36px rgba(255,64,129,0.16)',
-                  position: 'relative',
-                }}
-              >
-                <div
-                  style={{
-                    position: 'absolute',
-                    top: -12,
-                    right: 16,
-                    background: '#ff4081',
-                    color: '#fff',
-                    borderRadius: 999,
-                    padding: '6px 12px',
-                    fontSize: 12,
-                    fontWeight: 700,
-                  }}
-                >
-                  お得
-                </div>
-
-                <div style={{ fontSize: 22, fontWeight: 700 }}>20回</div>
-                <div style={{ marginTop: 8, color: '#777' }}></div>
-                <div style={{ marginTop: 4, color: '#777' }}>単価 8,000円</div>
-                <div style={{ marginTop: 20, fontSize: 34, fontWeight: 800, color: '#111' }}>
-                  160,000円
-                </div>
-                <div style={{ marginTop: 6, color: '#666' }}>(税込 176,000円)</div>
-              </div>
-            </div>
-          </div>
-
-          <div
+      {/* 料金表 */}
+      <section
+        style={{
+          maxWidth: 1100,
+          margin: '0 auto',
+          padding: '72px 24px',
+          paddingTop: 0,
+        }}
+      >
+        <div style={{ textAlign: 'center', marginBottom: 32 }}>
+          <h2
             style={{
-              background: 'linear-gradient(135deg, #111 0%, #333 100%)',
-              color: '#fff',
-              borderRadius: 28,
-              padding: 28,
+              fontSize: 34,
+              margin: 0,
+              color: '#e91e63',
+              fontWeight: 800,
+              letterSpacing: '0.04em',
             }}
           >
-            <div style={{ fontSize: 14, opacity: 0.8, marginBottom: 8 }}>ONLINE COACHING</div>
-            <h3 style={{ margin: '0 0 10px', fontSize: 28 }}>オンラインコーチング</h3>
-            <p style={{ margin: '0 0 18px', opacity: 0.85 }}>
-              月額プラン / どこでも受けられるオンライン指導
-            </p>
-            <div style={{ fontSize: 40, fontWeight: 800 }}>20,000円</div>
-            <div style={{ marginTop: 6, opacity: 0.85 }}>(税込 22,000円) / 月</div>
+            料金表
+          </h2>
+          <div
+            style={{
+              width: 72,
+              height: 4,
+              background: '#e91e63',
+              borderRadius: 999,
+              margin: '14px auto 0',
+            }}
+          />
+        </div>
+
+        {/* ランニングプラン */}
+        <div style={{ marginBottom: 48 }}>
+          <h3 style={{ fontSize: 24, color: '#e91e63', marginBottom: 16 }}>
+            ランニングプラン
+          </h3>
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(3, minmax(0, 1fr))',
+              gap: 20,
+            }}
+          >
+            {[
+              { title: '月4回', price: '34,000', taxPrice: '37,400' },
+              { title: '月8回', price: '64,000', taxPrice: '70,400' },
+              { title: '月12回', price: '90,000', taxPrice: '99,000' },
+            ].map((plan) => (
+              <div
+                key={plan.title}
+                style={{
+                  background: '#fff',
+                  border: '2px solid #fff1f6',
+                  borderRadius: 24,
+                  padding: 24,
+                  textAlign: 'center',
+                  boxShadow: '0 8px 24px rgba(0,0,0,0.04)',
+                }}
+              >
+                <div style={{ fontSize: 18, fontWeight: 700, color: '#666', marginBottom: 12 }}>
+                  {plan.title}
+                </div>
+                <div style={{ fontSize: 36, fontWeight: 800, color: '#111', lineHeight: 1.2 }}>
+                  {plan.price}
+                  <span style={{ fontSize: 16, fontWeight: 500, marginLeft: 2 }}>円</span>
+                </div>
+                <div style={{ fontSize: 14, color: '#999', marginTop: 4, marginBottom: 18 }}>
+                  (税込 {plan.taxPrice}円)
+                </div>
+                <button
+                  onClick={() => setShowQR(true)}
+                  style={{
+                    width: '100%',
+                    padding: '12px 16px',
+                    borderRadius: 999,
+                    border: '2px solid #ff4081',
+                    background: '#ff4081',
+                    color: '#fff',
+                    fontWeight: 700,
+                    cursor: 'pointer',
+                  }}
+                >
+                  申し込む
+                </button>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* ボディメイクプラン */}
+        <div style={{ marginBottom: 48 }}>
+          <h3 style={{ fontSize: 24, color: '#e91e63', marginBottom: 16 }}>
+            ボディメイクプラン（ランニング＆筋トレ）
+          </h3>
+          <div style={{ fontSize: 14, color: '#e91e63', marginTop: -8, marginBottom: 16, fontWeight: 700 }}>
+            ※ジム利用料金含む
+          </div>
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(3, minmax(0, 1fr))',
+              gap: 20,
+            }}
+          >
+            {[
+              { title: '月4回', price: '48,000', taxPrice: '52,800' },
+              { title: '月8回', price: '92,000', taxPrice: '101,200' },
+              { title: '月12回', price: '132,000', taxPrice: '145,200' },
+            ].map((plan) => (
+              <div
+                key={plan.title}
+                style={{
+                  background: '#fff',
+                  border: '2px solid #fff1f6',
+                  borderRadius: 24,
+                  padding: 24,
+                  textAlign: 'center',
+                  boxShadow: '0 8px 24px rgba(0,0,0,0.04)',
+                }}
+              >
+                <div style={{ fontSize: 18, fontWeight: 700, color: '#666', marginBottom: 12 }}>
+                  {plan.title}
+                </div>
+                <div style={{ fontSize: 36, fontWeight: 800, color: '#111', lineHeight: 1.2 }}>
+                  {plan.price}
+                  <span style={{ fontSize: 16, fontWeight: 500, marginLeft: 2 }}>円</span>
+                </div>
+                <div style={{ fontSize: 14, color: '#999', marginTop: 4, marginBottom: 18 }}>
+                  (税込 {plan.taxPrice}円)
+                </div>
+                <button
+                  onClick={() => setShowQR(true)}
+                  style={{
+                    width: '100%',
+                    padding: '12px 16px',
+                    borderRadius: 999,
+                    border: '2px solid #ff4081',
+                    background: '#ff4081',
+                    color: '#fff',
+                    fontWeight: 700,
+                    cursor: 'pointer',
+                  }}
+                >
+                  申し込む
+                </button>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* 一括プラン */}
+        <div style={{ marginBottom: 48 }}>
+          <h3 style={{ fontSize: 24, color: '#e91e63', marginBottom: 16 }}>
+            一括プラン
+          </h3>
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(2, minmax(0, 1fr))',
+              gap: 20,
+            }}
+          >
+            <div
+              style={{
+                background: '#fff',
+                border: '2px solid #fff1f6',
+                borderRadius: 24,
+                padding: 24,
+                textAlign: 'center',
+                boxShadow: '0 8px 24px rgba(0,0,0,0.04)',
+              }}
+            >
+              <div style={{ fontSize: 18, fontWeight: 700, color: '#666', marginBottom: 4 }}>
+                1回
+              </div>
+              <div style={{ fontSize: 14, color: '#e91e63', marginBottom: 12, fontWeight: 700 }}>
+                ※ジム利用料金別
+              </div>
+              <div style={{ fontSize: 36, fontWeight: 800, color: '#111', lineHeight: 1.2 }}>
+                9,500
+                <span style={{ fontSize: 16, fontWeight: 500, marginLeft: 2 }}>円</span>
+              </div>
+              <div style={{ fontSize: 14, color: '#999', marginTop: 4, marginBottom: 18 }}>
+                (税込 10,450円)
+              </div>
+              <button
+                onClick={() => setShowQR(true)}
+                style={{
+                  width: '100%',
+                  padding: '12px 16px',
+                  borderRadius: 999,
+                  border: '2px solid #ff4081',
+                  background: '#ff4081',
+                  color: '#fff',
+                  fontWeight: 700,
+                  cursor: 'pointer',
+                }}
+              >
+                申し込む
+              </button>
+            </div>
+
+            <div
+              style={{
+                background: '#fff',
+                border: '2px solid #fff1f6',
+                borderRadius: 24,
+                padding: 24,
+                textAlign: 'center',
+                boxShadow: '0 8px 24px rgba(0,0,0,0.04)',
+              }}
+            >
+              <div style={{ fontSize: 18, fontWeight: 700, color: '#666', marginBottom: 4 }}>
+                20回
+              </div>
+              <div style={{ fontSize: 14, color: '#e91e63', marginBottom: 12, fontWeight: 700 }}>
+                ※ジム利用料無料
+              </div>
+              <div style={{ fontSize: 36, fontWeight: 800, color: '#111', lineHeight: 1.2 }}>
+                160,000
+                <span style={{ fontSize: 16, fontWeight: 500, marginLeft: 2 }}>円</span>
+              </div>
+              <div style={{ fontSize: 14, color: '#999', marginTop: 4, marginBottom: 18 }}>
+                (税込 176,000円)
+              </div>
+              <button
+                onClick={() => setShowQR(true)}
+                style={{
+                  width: '100%',
+                  padding: '12px 16px',
+                  borderRadius: 999,
+                  border: '2px solid #ff4081',
+                  background: '#ff4081',
+                  color: '#fff',
+                  fontWeight: 700,
+                  cursor: 'pointer',
+                }}
+              >
+                申し込む
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* オンラインコーチング */}
+        <div>
+          <h3 style={{ fontSize: 24, color: '#e91e63', marginBottom: 16 }}>
+            オンラインコーチング
+          </h3>
+          <div style={{ maxWidth: 360, margin: '0 auto' }}>
+            <div
+              style={{
+                background: '#fff',
+                border: '2px solid #fff1f6',
+                borderRadius: 24,
+                padding: 24,
+                textAlign: 'center',
+                boxShadow: '0 8px 24px rgba(0,0,0,0.04)',
+              }}
+            >
+              <div style={{ fontSize: 18, fontWeight: 700, color: '#666', marginBottom: 4 }}>
+                月額プラン
+              </div>
+              <div style={{ fontSize: 14, color: '#666', marginBottom: 12 }}>
+                どこでも受けられるオンライン指導
+              </div>
+              <div style={{ fontSize: 36, fontWeight: 800, color: '#111', lineHeight: 1.2 }}>
+                20,000
+                <span style={{ fontSize: 16, fontWeight: 500, marginLeft: 2 }}>円 / 月</span>
+              </div>
+              <div style={{ fontSize: 14, color: '#999', marginTop: 4, marginBottom: 18 }}>
+                (税込 22,000円)
+              </div>
+              <button
+                onClick={() => setShowQR(true)}
+                style={{
+                  width: '100%',
+                  padding: '12px 16px',
+                  borderRadius: 999,
+                  border: '2px solid #ff4081',
+                  background: '#ff4081',
+                  color: '#fff',
+                  fontWeight: 700,
+                  cursor: 'pointer',
+                }}
+              >
+                申し込む
+              </button>
+            </div>
           </div>
         </div>
       </section>
