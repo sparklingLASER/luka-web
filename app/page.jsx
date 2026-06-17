@@ -377,7 +377,7 @@ export default function HomePage() {
             ムキムキになりたくない部位を細く引き締めるのに適しています。
           </p>
 
-                            <p style={{ margin: '0 0 24px', fontSize: 16, color: '#333' }}>
+                                      <p style={{ margin: '0 0 24px', fontSize: 16, color: '#333' }}>
             パーソナルランニング指導に加え、食事指導も行いスタミナを上げながらボディメイクも行うプログラムを提供。
           </p>
 
@@ -427,7 +427,7 @@ export default function HomePage() {
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(3, minmax(0, 1fr))',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
               gap: 20,
             }}
           >
@@ -480,15 +480,12 @@ export default function HomePage() {
         {/* ボディメイクプラン */}
         <div style={{ marginBottom: 48 }}>
           <h3 style={{ fontSize: 24, color: '#e91e63', marginBottom: 16 }}>
-            ボディメイクプラン（ランニング＆筋トレ）
+            ボディメイクプラン
           </h3>
-          <div style={{ fontSize: 14, color: '#e91e63', marginTop: -8, marginBottom: 16, fontWeight: 700 }}>
-            ※ジム利用料金含む
-          </div>
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(3, minmax(0, 1fr))',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
               gap: 20,
             }}
           >
@@ -546,10 +543,11 @@ export default function HomePage() {
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(2, minmax(0, 1fr))',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
               gap: 20,
             }}
           >
+            {/* 1回 */}
             <div
               style={{
                 background: '#fff',
@@ -560,11 +558,8 @@ export default function HomePage() {
                 boxShadow: '0 8px 24px rgba(0,0,0,0.04)',
               }}
             >
-              <div style={{ fontSize: 18, fontWeight: 700, color: '#666', marginBottom: 4 }}>
+              <div style={{ fontSize: 18, fontWeight: 700, color: '#666', marginBottom: 18 }}>
                 1回
-              </div>
-              <div style={{ fontSize: 14, color: '#e91e63', marginBottom: 12, fontWeight: 700 }}>
-                ※ジム利用料金別
               </div>
               <div style={{ fontSize: 36, fontWeight: 800, color: '#111', lineHeight: 1.2 }}>
                 9,500
@@ -590,6 +585,7 @@ export default function HomePage() {
               </button>
             </div>
 
+            {/* 10回 */}
             <div
               style={{
                 background: '#fff',
@@ -600,11 +596,46 @@ export default function HomePage() {
                 boxShadow: '0 8px 24px rgba(0,0,0,0.04)',
               }}
             >
-              <div style={{ fontSize: 18, fontWeight: 700, color: '#666', marginBottom: 4 }}>
-                20回
+              <div style={{ fontSize: 18, fontWeight: 700, color: '#666', marginBottom: 18 }}>
+                10回
               </div>
-              <div style={{ fontSize: 14, color: '#e91e63', marginBottom: 12, fontWeight: 700 }}>
-                ※ジム利用料無料
+              <div style={{ fontSize: 36, fontWeight: 800, color: '#111', lineHeight: 1.2 }}>
+                90,000
+                <span style={{ fontSize: 16, fontWeight: 500, marginLeft: 2 }}>円</span>
+              </div>
+              <div style={{ fontSize: 14, color: '#999', marginTop: 4, marginBottom: 18 }}>
+                (税込 99,000円)
+              </div>
+              <button
+                onClick={() => setShowQR(true)}
+                style={{
+                  width: '100%',
+                  padding: '12px 16px',
+                  borderRadius: 999,
+                  border: '2px solid #ff4081',
+                  background: '#ff4081',
+                  color: '#fff',
+                  fontWeight: 700,
+                  cursor: 'pointer',
+                }}
+              >
+                申し込む
+              </button>
+            </div>
+
+            {/* 20回 */}
+            <div
+              style={{
+                background: '#fff',
+                border: '2px solid #fff1f6',
+                borderRadius: 24,
+                padding: 24,
+                textAlign: 'center',
+                boxShadow: '0 8px 24px rgba(0,0,0,0.04)',
+              }}
+            >
+              <div style={{ fontSize: 18, fontWeight: 700, color: '#666', marginBottom: 18 }}>
+                20回
               </div>
               <div style={{ fontSize: 36, fontWeight: 800, color: '#111', lineHeight: 1.2 }}>
                 160,000
