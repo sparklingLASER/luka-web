@@ -152,7 +152,7 @@ export default function HomePage() {
           </div>
 
           <p style={{ marginTop: 18, fontSize: 'clamp(16px, 2.4vw, 26px)' }}>
-            マラソン完走・ダイエット・ボディメイクに特化したランニング指導
+            ランニング・健康維持・ダイエットに特化したサービス
           </p>
 
           <div style={{ marginTop: 28 }}>
@@ -210,10 +210,10 @@ export default function HomePage() {
               <li>ジュニアオリンピック3位（200m）</li>
               <li>日本選手権出場（100m・200m）</li>
               <li>岐南工業高校 → 東海大学</li>
-              <li>100kgのお客様を5カ月で-10kg＆東京マラソン完走までサポート</li>
+              <li>100kgのお客様を5カ月で-10kg＆マラソン完走までサポート</li>
             </ul>
             <p>
-              現在はランニングを通してマラソン完走やダイエット・ボディメイクをメインにお客様をサポート中。
+              現在はランニングを通して健康維持やダイエット・ボディメイクをメインにお客様をサポート中。
             </p>
           </div>
         </div>
@@ -245,7 +245,7 @@ export default function HomePage() {
           </ul>
 
           <p style={{ marginTop: 14, color: '#666', fontSize: 14 }}>
-            （その他スポットは要相談。別途交通費を頂く可能性もあります。）
+            （その他スポットは要相談。別途交通費を頂きます。）
           </p>
         </div>
       </section>
@@ -308,12 +308,12 @@ export default function HomePage() {
                 lineHeight: 1.6,
               }}
             >
-              ランニング指導を軸に、必要に応じて筋力トレーニングも取り入れます。
+              ランニング指導を軸にドリルやトレーニングメニュー作成・オンラインコーチングを取り入れます。
             </p>
           </div>
 
           <p style={{ margin: '0 0 24px', fontSize: 16, color: '#333' }}>
-            マンツーマンランニング指導を行っています。遅筋繊維を鍛えると効率的に酸素を利用し脂肪を燃やすため、
+            マンツーマンでの指導を行っています。遅筋繊維を鍛えると効率的に酸素を利用し脂肪を燃やすため、
             基礎代謝も上がりダイエットにも最適です。
           </p>
 
@@ -330,7 +330,7 @@ export default function HomePage() {
               ['◷', '対面60〜70分対応（ボディメイクプランは90分又は、午前＆午後に分けて対応）'],
               ['💬', 'LINEでの食事案内有り'],
               ['📅', '毎日対応'],
-              ['🗓️', '予約 7:00〜21:00'],
+              ['🗓️', '予約 6:00〜24:00'],
               ['📝', 'トレーニングメニュー作成'],
               ['🖥️', 'オンラインコーチングも対応（50分）'],
             ].map(([icon, text], index) => (
@@ -388,7 +388,7 @@ export default function HomePage() {
           </p>
 
           <p style={{ margin: 0, fontSize: 16, color: '#333', fontWeight: 700 }}>
-            3食抜かずにダイエットを行います。
+            3食抜かずに食事のご案内を行います。
           </p>
         </div>
       </section>
@@ -412,7 +412,7 @@ export default function HomePage() {
               letterSpacing: '0.04em',
             }}
           >
-            料金表
+            料金表（サブスクリプション）
           </h2>
           <div
             style={{
@@ -672,7 +672,7 @@ export default function HomePage() {
         {/* オンラインコーチング */}
         <div>
           <h3 style={{ fontSize: 24, color: '#e91e63', marginBottom: 16 }}>
-            オンラインコーチング
+            オンラインコーチング（サブスクリプション）
           </h3>
           <div style={{ maxWidth: 360, margin: '0 auto' }}>
             <div
