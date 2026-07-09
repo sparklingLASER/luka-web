@@ -327,7 +327,7 @@ export default function HomePage() {
             }}
           >
             {[
-              ['◷', '対面60〜70分対応（ボディメイクプランは90分又は、午前＆午後に分けて対応）'],
+              ['◷', '対面60分対応（ボディメイクプランは90分）'],
               ['💬', 'LINEでの食事案内有り'],
               ['📅', '毎日対応'],
               ['🗓️', '予約 6:00〜24:00'],
@@ -412,7 +412,7 @@ export default function HomePage() {
               letterSpacing: '0.04em',
             }}
           >
-            料金表（サブスクリプション）
+            料金表
           </h2>
           <div
             style={{
@@ -428,7 +428,7 @@ export default function HomePage() {
         {/* ランニングプラン */}
         <div style={{ marginBottom: 48 }}>
           <h3 style={{ fontSize: 24, color: '#e91e63', marginBottom: 16 }}>
-            ランニングプラン
+            ランニングプラン（サブスクリプション）
           </h3>
           <div
             style={{
@@ -486,7 +486,7 @@ export default function HomePage() {
         {/* ボディメイクプラン */}
         <div style={{ marginBottom: 48 }}>
           <h3 style={{ fontSize: 24, color: '#e91e63', marginBottom: 16 }}>
-            ボディメイクプラン
+            ボディメイクプラン（サブスクリプション）
           </h3>
           <div
             style={{
