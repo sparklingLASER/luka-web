@@ -185,7 +185,6 @@ export default function HomePage() {
             padding: 28,
             lineHeight: 1.9,
             display: 'grid',
-            // 👇 スマホなら1列、PCなら写真(300px)とテキスト(1fr)に自動調整されるように修正！
             gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
             gap: 24,
             alignItems: 'center',
@@ -200,7 +199,7 @@ export default function HomePage() {
               aspectRatio: '3 / 4',
               objectFit: 'cover',
               borderRadius: 20,
-              margin: '0 auto', // スマホで中央に配置されるように調整
+              margin: '0 auto',
             }}
           />
 
@@ -320,7 +319,6 @@ export default function HomePage() {
           <div
             style={{
               display: 'grid',
-              // 👇 ここを repeat(2, ...) から auto-fit に変更！スマホで綺麗に縦1列になります
               gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
               gap: 16,
               marginBottom: 28,
@@ -423,6 +421,72 @@ export default function HomePage() {
               margin: '14px auto 0',
             }}
           />
+        </div>
+
+        {/* 通い放題プラン */}
+        <div style={{ marginBottom: 48 }}>
+          <h3 style={{ fontSize: 24, color: '#e91e63', marginBottom: 16 }}>
+            通い放題プラン（サブスクリプション）
+          </h3>
+          <div style={{ maxWidth: 420, margin: '0 auto' }}>
+            <div
+              style={{
+                background: 'linear-gradient(180deg, #fff7fb 0%, #fff 100%)',
+                border: '2px solid #ff7eb3',
+                borderRadius: 24,
+                padding: 24,
+                textAlign: 'center',
+                boxShadow: '0 12px 30px rgba(233,30,99,0.12)',
+                position: 'relative',
+              }}
+            >
+              <div
+                style={{
+                  position: 'absolute',
+                  top: -12,
+                  left: 20,
+                  background: '#e91e63',
+                  color: '#fff',
+                  fontSize: 12,
+                  fontWeight: 800,
+                  padding: '6px 12px',
+                  borderRadius: 999,
+                  letterSpacing: '0.04em',
+                }}
+              >
+                おすすめ
+              </div>
+
+              <div style={{ fontSize: 14, color: '#d81b60', marginBottom: 12, lineHeight: 1.7 }}>
+                回数制限なしでしっかり通いたい方におすすめ！
+              </div>
+
+              <div style={{ fontSize: 36, fontWeight: 800, color: '#111', lineHeight: 1.2 }}>
+                100,000
+                <span style={{ fontSize: 16, fontWeight: 500, marginLeft: 2 }}>円</span>
+              </div>
+
+              <div style={{ fontSize: 14, color: '#999', marginTop: 4, marginBottom: 18 }}>
+                (税込 110,000円)
+              </div>
+
+              <button
+                onClick={() => setShowQR(true)}
+                style={{
+                  width: '100%',
+                  padding: '12px 16px',
+                  borderRadius: 999,
+                  border: '2px solid #ff4081',
+                  background: '#ff4081',
+                  color: '#fff',
+                  fontWeight: 700,
+                  cursor: 'pointer',
+                }}
+              >
+                申し込む
+              </button>
+            </div>
+          </div>
         </div>
 
         {/* ランニングプラン */}
@@ -720,3 +784,4 @@ export default function HomePage() {
     </main>
   );
 }
+
