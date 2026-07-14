@@ -185,6 +185,7 @@ export default function HomePage() {
             padding: 28,
             lineHeight: 1.9,
             display: 'grid',
+            // 👇 スマホなら1列、PCなら写真(300px)とテキスト(1fr)に自動調整されるように修正！
             gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
             gap: 24,
             alignItems: 'center',
@@ -199,7 +200,7 @@ export default function HomePage() {
               aspectRatio: '3 / 4',
               objectFit: 'cover',
               borderRadius: 20,
-              margin: '0 auto',
+              margin: '0 auto', // スマホで中央に配置されるように調整
             }}
           />
 
@@ -319,6 +320,7 @@ export default function HomePage() {
           <div
             style={{
               display: 'grid',
+              // 👇 ここを repeat(2, ...) から auto-fit に変更！スマホで綺麗に縦1列になります
               gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
               gap: 16,
               marginBottom: 28,
@@ -426,7 +428,7 @@ export default function HomePage() {
         {/* 通い放題プラン */}
         <div style={{ marginBottom: 48 }}>
           <h3 style={{ fontSize: 24, color: '#e91e63', marginBottom: 16 }}>
-            通い放題プラン（サブスクリプション）
+            通い放題プラン
           </h3>
           <div style={{ maxWidth: 420, margin: '0 auto' }}>
             <div
@@ -456,20 +458,34 @@ export default function HomePage() {
               >
                 おすすめ
               </div>
-
-              <div style={{ fontSize: 14, color: '#d81b60', marginBottom: 12, lineHeight: 1.7 }}>
+              <div style={{ fontSize: 13, color: '#d81b60', marginBottom: 8, lineHeight: 1.7 }}>
                 回数制限なしでしっかり通いたい方におすすめ！
               </div>
-
-              <div style={{ fontSize: 36, fontWeight: 800, color: '#111', lineHeight: 1.2 }}>
-                100,000
-                <span style={{ fontSize: 16, fontWeight: 500, marginLeft: 2 }}>円</span>
+              <div style={{ fontSize: 12, color: '#666', marginBottom: 10, lineHeight: 1.7 }}>
+                1回あたり 実質 110,000円 ÷ 来店回数
               </div>
-
-              <div style={{ fontSize: 14, color: '#999', marginTop: 4, marginBottom: 18 }}>
-                (税込 110,000円)
+              <div
+                style={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'flex-end',
+                  gap: 4,
+                  marginTop: 6,
+                }}
+              >
+                <span style={{ fontSize: 32, fontWeight: 800, color: '#111', lineHeight: 1 }}>
+                  100,000
+                </span>
+                <span style={{ fontSize: 14, fontWeight: 500, color: '#111', marginBottom: 3 }}>
+                  円 / 月
+                </span>
               </div>
-
+              <div style={{ fontSize: 13, color: '#999', marginTop: 6, marginBottom: 6 }}>
+                （税込 110,000円）
+              </div>
+              <div style={{ fontSize: 13, color: '#e91e63', fontWeight: 700, marginBottom: 18 }}>
+                11回以上で一括1回よりお得
+              </div>
               <button
                 onClick={() => setShowQR(true)}
                 style={{
@@ -502,9 +518,9 @@ export default function HomePage() {
             }}
           >
             {[
-              { title: '月4回', price: '34,000', taxPrice: '37,400' },
-              { title: '月8回', price: '64,000', taxPrice: '70,400' },
-              { title: '月12回', price: '90,000', taxPrice: '99,000' },
+              { title: '月4回', price: '34,000', taxPrice: '37,400', unitPrice: '9,350' },
+              { title: '月8回', price: '64,000', taxPrice: '70,400', unitPrice: '8,800' },
+              { title: '月12回', price: '90,000', taxPrice: '99,000', unitPrice: '8,250' },
             ].map((plan) => (
               <div
                 key={plan.title}
@@ -520,12 +536,27 @@ export default function HomePage() {
                 <div style={{ fontSize: 18, fontWeight: 700, color: '#666', marginBottom: 12 }}>
                   {plan.title}
                 </div>
-                <div style={{ fontSize: 36, fontWeight: 800, color: '#111', lineHeight: 1.2 }}>
-                  {plan.price}
-                  <span style={{ fontSize: 16, fontWeight: 500, marginLeft: 2 }}>円</span>
+                <div
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'flex-end',
+                    gap: 4,
+                    marginTop: 6,
+                  }}
+                >
+                  <span style={{ fontSize: 32, fontWeight: 800, color: '#111', lineHeight: 1 }}>
+                    {plan.price}
+                  </span>
+                  <span style={{ fontSize: 14, fontWeight: 500, color: '#111', marginBottom: 3 }}>
+                    円 / 月
+                  </span>
                 </div>
-                <div style={{ fontSize: 14, color: '#999', marginTop: 4, marginBottom: 18 }}>
-                  (税込 {plan.taxPrice}円)
+                <div style={{ fontSize: 13, color: '#999', marginTop: 6, marginBottom: 6 }}>
+                  （税込 {plan.taxPrice}円）
+                </div>
+                <div style={{ fontSize: 13, color: '#e91e63', fontWeight: 700, marginBottom: 18 }}>
+                  1回あたり {plan.unitPrice}円 / 回
                 </div>
                 <button
                   onClick={() => setShowQR(true)}
@@ -560,9 +591,9 @@ export default function HomePage() {
             }}
           >
             {[
-              { title: '月4回', price: '48,000', taxPrice: '52,800' },
-              { title: '月8回', price: '92,000', taxPrice: '101,200' },
-              { title: '月12回', price: '132,000', taxPrice: '145,200' },
+              { title: '月4回', price: '48,000', taxPrice: '52,800', unitPrice: '13,200' },
+              { title: '月8回', price: '92,000', taxPrice: '101,200', unitPrice: '12,650' },
+              { title: '月12回', price: '132,000', taxPrice: '145,200', unitPrice: '12,100' },
             ].map((plan) => (
               <div
                 key={plan.title}
@@ -578,12 +609,27 @@ export default function HomePage() {
                 <div style={{ fontSize: 18, fontWeight: 700, color: '#666', marginBottom: 12 }}>
                   {plan.title}
                 </div>
-                <div style={{ fontSize: 36, fontWeight: 800, color: '#111', lineHeight: 1.2 }}>
-                  {plan.price}
-                  <span style={{ fontSize: 16, fontWeight: 500, marginLeft: 2 }}>円</span>
+                <div
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'flex-end',
+                    gap: 4,
+                    marginTop: 6,
+                  }}
+                >
+                  <span style={{ fontSize: 32, fontWeight: 800, color: '#111', lineHeight: 1 }}>
+                    {plan.price}
+                  </span>
+                  <span style={{ fontSize: 14, fontWeight: 500, color: '#111', marginBottom: 3 }}>
+                    円 / 月
+                  </span>
                 </div>
-                <div style={{ fontSize: 14, color: '#999', marginTop: 4, marginBottom: 18 }}>
-                  (税込 {plan.taxPrice}円)
+                <div style={{ fontSize: 13, color: '#999', marginTop: 6, marginBottom: 6 }}>
+                  （税込 {plan.taxPrice}円）
+                </div>
+                <div style={{ fontSize: 13, color: '#e91e63', fontWeight: 700, marginBottom: 18 }}>
+                  1回あたり {plan.unitPrice}円 / 回
                 </div>
                 <button
                   onClick={() => setShowQR(true)}
@@ -635,8 +681,11 @@ export default function HomePage() {
                 9,500
                 <span style={{ fontSize: 16, fontWeight: 500, marginLeft: 2 }}>円</span>
               </div>
-              <div style={{ fontSize: 14, color: '#999', marginTop: 4, marginBottom: 18 }}>
+              <div style={{ fontSize: 14, color: '#999', marginTop: 4, marginBottom: 6 }}>
                 (税込 10,450円)
+              </div>
+              <div style={{ fontSize: 13, color: '#e91e63', fontWeight: 700, marginBottom: 18 }}>
+                1回あたり 10,450円 / 回
               </div>
               <button
                 onClick={() => setShowQR(true)}
@@ -669,12 +718,26 @@ export default function HomePage() {
               <div style={{ fontSize: 18, fontWeight: 700, color: '#666', marginBottom: 18 }}>
                 10回
               </div>
-              <div style={{ fontSize: 36, fontWeight: 800, color: '#111', lineHeight: 1.2 }}>
-                90,000
-                <span style={{ fontSize: 16, fontWeight: 500, marginLeft: 2 }}>円</span>
+              <div
+                style={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'flex-end',
+                  gap: 4,
+                }}
+              >
+                <span style={{ fontSize: 32, fontWeight: 800, color: '#111', lineHeight: 1 }}>
+                  90,000
+                </span>
+                <span style={{ fontSize: 14, fontWeight: 500, color: '#111', marginBottom: 3 }}>
+                  円 / 10回
+                </span>
               </div>
-              <div style={{ fontSize: 14, color: '#999', marginTop: 4, marginBottom: 18 }}>
-                (税込 99,000円)
+              <div style={{ fontSize: 13, color: '#999', marginTop: 6, marginBottom: 6 }}>
+                （税込 99,000円）
+              </div>
+              <div style={{ fontSize: 13, color: '#e91e63', fontWeight: 700, marginBottom: 18 }}>
+                1回あたり 9,900円 / 回
               </div>
               <button
                 onClick={() => setShowQR(true)}
@@ -707,12 +770,26 @@ export default function HomePage() {
               <div style={{ fontSize: 18, fontWeight: 700, color: '#666', marginBottom: 18 }}>
                 20回
               </div>
-              <div style={{ fontSize: 36, fontWeight: 800, color: '#111', lineHeight: 1.2 }}>
-                160,000
-                <span style={{ fontSize: 16, fontWeight: 500, marginLeft: 2 }}>円</span>
+              <div
+                style={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'flex-end',
+                  gap: 4,
+                }}
+              >
+                <span style={{ fontSize: 32, fontWeight: 800, color: '#111', lineHeight: 1 }}>
+                  160,000
+                </span>
+                <span style={{ fontSize: 14, fontWeight: 500, color: '#111', marginBottom: 3 }}>
+                  円 / 20回
+                </span>
               </div>
-              <div style={{ fontSize: 14, color: '#999', marginTop: 4, marginBottom: 18 }}>
-                (税込 176,000円)
+              <div style={{ fontSize: 13, color: '#999', marginTop: 6, marginBottom: 6 }}>
+                （税込 176,000円）
+              </div>
+              <div style={{ fontSize: 13, color: '#e91e63', fontWeight: 700, marginBottom: 18 }}>
+                1回あたり 8,800円 / 回
               </div>
               <button
                 onClick={() => setShowQR(true)}
@@ -784,4 +861,3 @@ export default function HomePage() {
     </main>
   );
 }
-
