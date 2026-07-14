@@ -462,7 +462,7 @@ export default function HomePage() {
                 回数制限なしでしっかり通いたい方におすすめ！
               </div>
               <div style={{ fontSize: 12, color: '#666', marginBottom: 10, lineHeight: 1.7 }}>
-                1回あたり 実質 110,000円 ÷ 来店回数
+                1回あたり 110,000円 ÷ 来店回数
               </div>
               <div
                 style={{
@@ -484,7 +484,7 @@ export default function HomePage() {
                 （税込 110,000円）
               </div>
               <div style={{ fontSize: 13, color: '#e91e63', fontWeight: 700, marginBottom: 18 }}>
-                11回以上で一括1回よりお得
+                14回以上でランニングプラン12回の単価よりお得
               </div>
               <button
                 onClick={() => setShowQR(true)}
