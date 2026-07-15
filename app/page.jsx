@@ -10,15 +10,31 @@ const images = [
   'https://ucarecdn.com/c151e40a-9f1c-45cf-806e-6c5ede935d9f/-/quality/best/-/format/auto/',
 ];
 
+const LINE_URL = 'https://lin.ee/8lCoeZj';
+
 const sectionStyle = {
   maxWidth: 1100,
   margin: '0 auto',
   padding: '72px 24px',
 };
 
+const lineButtonStyle = {
+  width: '100%',
+  padding: '12px 16px',
+  borderRadius: 999,
+  border: '2px solid #ff4081',
+  background: '#ff4081',
+  color: '#fff',
+  fontWeight: 700,
+  cursor: 'pointer',
+  textDecoration: 'none',
+  display: 'inline-block',
+  textAlign: 'center',
+  boxSizing: 'border-box',
+};
+
 export default function HomePage() {
   const [currentImage, setCurrentImage] = useState(0);
-  const [showQR, setShowQR] = useState(false);
 
   useEffect(() => {
     const id = setInterval(() => {
@@ -37,61 +53,6 @@ export default function HomePage() {
         color: '#111',
       }}
     >
-      {showQR && (
-        <div
-          onClick={() => setShowQR(false)}
-          style={{
-            position: 'fixed',
-            inset: 0,
-            background: 'rgba(0,0,0,.72)',
-            zIndex: 50,
-            display: 'grid',
-            placeItems: 'center',
-            padding: 24,
-          }}
-        >
-          <div
-            onClick={(e) => e.stopPropagation()}
-            style={{
-              background: '#fff',
-              borderRadius: 24,
-              padding: 28,
-              width: 'min(92vw, 360px)',
-              textAlign: 'center',
-            }}
-          >
-            <h3 style={{ margin: '0 0 8px', color: '#e91e63' }}>LINEで申し込む</h3>
-            <p style={{ color: '#666', fontSize: 14, marginBottom: 16 }}>
-              QRコードを読み取ってください
-            </p>
-            <img
-              src="https://dtvoeevhaseb5.cloudfront.net/user-uploads/ca60d0e4-be51-41d9-81f4-052473ea3f24.jpg"
-              alt="LINE QRコード"
-              style={{
-                width: 220,
-                height: 220,
-                objectFit: 'cover',
-                borderRadius: 16,
-              }}
-            />
-            <button
-              onClick={() => setShowQR(false)}
-              style={{
-                width: '100%',
-                marginTop: 18,
-                padding: '12px 16px',
-                border: 0,
-                borderRadius: 999,
-                background: '#f3f3f3',
-                cursor: 'pointer',
-              }}
-            >
-              閉じる
-            </button>
-          </div>
-        </div>
-      )}
-
       <section
         style={{
           position: 'relative',
@@ -156,20 +117,27 @@ export default function HomePage() {
           </p>
 
           <div style={{ marginTop: 28 }}>
-            <button
-              onClick={() => setShowQR(true)}
+            <a
+              href={LINE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               style={{
+                display: 'inline-block',
                 background: '#ff4081',
                 color: '#fff',
                 border: 0,
                 borderRadius: 999,
-                padding: '14px 28px',
-                fontSize: 16,
+                padding: '16px 32px',
+                fontSize: 18,
+                fontWeight: 800,
                 cursor: 'pointer',
+                textDecoration: 'none',
+                boxShadow: '0 6px 18px rgba(255,64,129,0.45)',
+                letterSpacing: '0.02em',
               }}
             >
-              LINEで申し込む
-            </button>
+              💬 無料カウンセリング&体験トレーニング
+            </a>
           </div>
         </div>
       </section>
@@ -185,7 +153,6 @@ export default function HomePage() {
             padding: 28,
             lineHeight: 1.9,
             display: 'grid',
-            // 👇 スマホなら1列、PCなら写真(300px)とテキスト(1fr)に自動調整されるように修正！
             gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
             gap: 24,
             alignItems: 'center',
@@ -200,7 +167,7 @@ export default function HomePage() {
               aspectRatio: '3 / 4',
               objectFit: 'cover',
               borderRadius: 20,
-              margin: '0 auto', // スマホで中央に配置されるように調整
+              margin: '0 auto',
             }}
           />
 
@@ -320,7 +287,6 @@ export default function HomePage() {
           <div
             style={{
               display: 'grid',
-              // 👇 ここを repeat(2, ...) から auto-fit に変更！スマホで綺麗に縦1列になります
               gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
               gap: 16,
               marginBottom: 28,
@@ -486,21 +452,14 @@ export default function HomePage() {
               <div style={{ fontSize: 13, color: '#e91e63', fontWeight: 700, marginBottom: 18 }}>
                 14回以上でランニングプラン12回の単価よりお得
               </div>
-              <button
-                onClick={() => setShowQR(true)}
-                style={{
-                  width: '100%',
-                  padding: '12px 16px',
-                  borderRadius: 999,
-                  border: '2px solid #ff4081',
-                  background: '#ff4081',
-                  color: '#fff',
-                  fontWeight: 700,
-                  cursor: 'pointer',
-                }}
+              <a
+                href={LINE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={lineButtonStyle}
               >
                 申し込む
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -558,21 +517,14 @@ export default function HomePage() {
                 <div style={{ fontSize: 13, color: '#e91e63', fontWeight: 700, marginBottom: 18 }}>
                   1回あたり {plan.unitPrice}円 / 回
                 </div>
-                <button
-                  onClick={() => setShowQR(true)}
-                  style={{
-                    width: '100%',
-                    padding: '12px 16px',
-                    borderRadius: 999,
-                    border: '2px solid #ff4081',
-                    background: '#ff4081',
-                    color: '#fff',
-                    fontWeight: 700,
-                    cursor: 'pointer',
-                  }}
+                <a
+                  href={LINE_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={lineButtonStyle}
                 >
                   申し込む
-                </button>
+                </a>
               </div>
             ))}
           </div>
@@ -631,21 +583,14 @@ export default function HomePage() {
                 <div style={{ fontSize: 13, color: '#e91e63', fontWeight: 700, marginBottom: 18 }}>
                   1回あたり {plan.unitPrice}円 / 回
                 </div>
-                <button
-                  onClick={() => setShowQR(true)}
-                  style={{
-                    width: '100%',
-                    padding: '12px 16px',
-                    borderRadius: 999,
-                    border: '2px solid #ff4081',
-                    background: '#ff4081',
-                    color: '#fff',
-                    fontWeight: 700,
-                    cursor: 'pointer',
-                  }}
+                <a
+                  href={LINE_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={lineButtonStyle}
                 >
                   申し込む
-                </button>
+                </a>
               </div>
             ))}
           </div>
@@ -687,21 +632,14 @@ export default function HomePage() {
               <div style={{ fontSize: 13, color: '#e91e63', fontWeight: 700, marginBottom: 18 }}>
                 1回あたり 10,450円 / 回
               </div>
-              <button
-                onClick={() => setShowQR(true)}
-                style={{
-                  width: '100%',
-                  padding: '12px 16px',
-                  borderRadius: 999,
-                  border: '2px solid #ff4081',
-                  background: '#ff4081',
-                  color: '#fff',
-                  fontWeight: 700,
-                  cursor: 'pointer',
-                }}
+              <a
+                href={LINE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={lineButtonStyle}
               >
                 申し込む
-              </button>
+              </a>
             </div>
 
             {/* 10回 */}
@@ -739,21 +677,14 @@ export default function HomePage() {
               <div style={{ fontSize: 13, color: '#e91e63', fontWeight: 700, marginBottom: 18 }}>
                 1回あたり 9,900円 / 回
               </div>
-              <button
-                onClick={() => setShowQR(true)}
-                style={{
-                  width: '100%',
-                  padding: '12px 16px',
-                  borderRadius: 999,
-                  border: '2px solid #ff4081',
-                  background: '#ff4081',
-                  color: '#fff',
-                  fontWeight: 700,
-                  cursor: 'pointer',
-                }}
+              <a
+                href={LINE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={lineButtonStyle}
               >
                 申し込む
-              </button>
+              </a>
             </div>
 
             {/* 20回 */}
@@ -791,21 +722,14 @@ export default function HomePage() {
               <div style={{ fontSize: 13, color: '#e91e63', fontWeight: 700, marginBottom: 18 }}>
                 1回あたり 8,800円 / 回
               </div>
-              <button
-                onClick={() => setShowQR(true)}
-                style={{
-                  width: '100%',
-                  padding: '12px 16px',
-                  borderRadius: 999,
-                  border: '2px solid #ff4081',
-                  background: '#ff4081',
-                  color: '#fff',
-                  fontWeight: 700,
-                  cursor: 'pointer',
-                }}
+              <a
+                href={LINE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={lineButtonStyle}
               >
                 申し込む
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -839,21 +763,14 @@ export default function HomePage() {
               <div style={{ fontSize: 14, color: '#999', marginTop: 4, marginBottom: 18 }}>
                 (税込 22,000円)
               </div>
-              <button
-                onClick={() => setShowQR(true)}
-                style={{
-                  width: '100%',
-                  padding: '12px 16px',
-                  borderRadius: 999,
-                  border: '2px solid #ff4081',
-                  background: '#ff4081',
-                  color: '#fff',
-                  fontWeight: 700,
-                  cursor: 'pointer',
-                }}
+              <a
+                href={LINE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={lineButtonStyle}
               >
                 申し込む
-              </button>
+              </a>
             </div>
           </div>
         </div>
