@@ -1,5 +1,5 @@
 export const metadata = {
-  metadataBase: new URL('https://www.lukarunninng.com'),
+  metadataBase: new URL('https://luka-web-eta.vercel.app'),
   title: 'LUKA! Running＆Workout | マラソン完走・ダイエット・ボディメイクに特化したパーソナルランニング指導',
   description:
     '元日本選手権出場トレーナーによるマンツーマンランニング指導。マラソン完走・ダイエット・ボディメイクに特化。皇居周り・隅田川周りで対面指導＆オンラインコーチングも対応。LINEで申し込み受付中。',
@@ -9,7 +9,7 @@ export const metadata = {
     title: 'LUKA! Running＆Workout | マラソン完走・ダイエット・ボディメイクに特化したパーソナルランニング指導',
     description:
       '元日本選手権出場トレーナーによるマンツーマンランニング指導。マラソン完走・ダイエット・ボディメイクに特化。皇居周り・隅田川周りで対面指導＆オンラインコーチングも対応。LINEで申し込み受付中。',
-    url: 'https://www.lukarunninng.com',
+    url: 'https://luka-web-eta.vercel.app',
     siteName: 'LUKA! Running＆Workout',
     locale: 'ja_JP',
     type: 'website',
