@@ -48,7 +48,7 @@ export default function HomePage() {
     <main
       style={{
         margin: 0,
-        paddingBottom: 80, // 固定CTAボタンとコンテンツの被りを防止する余白
+        paddingBottom: 100, // 固定CTAボタンとコンテンツの被りを防止する余白
         fontFamily: 'Arial, Helvetica, sans-serif',
         background: '#fff',
         color: '#111',
@@ -150,7 +150,7 @@ export default function HomePage() {
           </div>
 
           <p style={{ marginTop: 18, fontSize: 'clamp(16px, 2.4vw, 26px)' }}>
-            ランニングのある暮らしで健康促進に特化したサービス
+            ランニングのある暮らしで健康維持に特化したサービス
           </p>
         </div>
       </section>
@@ -789,6 +789,83 @@ export default function HomePage() {
               </a>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* 特定商取引法に基づく表記 */}
+      <section
+        style={{
+          maxWidth: 1100,
+          margin: '0 auto',
+          padding: '48px 24px 24px',
+          borderTop: '1px solid #eee',
+        }}
+      >
+        <h2
+          style={{
+            fontSize: 22,
+            marginBottom: 24,
+            textAlign: 'center',
+            color: '#333',
+            fontWeight: 700,
+          }}
+        >
+          特定商取引法に基づく表記
+        </h2>
+
+        <div
+          style={{
+            background: '#fafafa',
+            borderRadius: 16,
+            padding: '24px 28px',
+            fontSize: 14,
+            lineHeight: 1.8,
+            color: '#444',
+          }}
+        >
+          <dl style={{ margin: 0 }}>
+            {[
+              ['販売事業者名（屋号）', 'LUKA! Running＆Workout'],
+              ['運営責任者', '加藤慎之介'],
+              [
+                '所在地',
+                'お問合せ先メールアドレスにてご請求をいただければ、遅滞なく開示いたします。',
+              ],
+              [
+                '電話番号',
+                'お問合せ先メールアドレスにてご請求をいただければ、遅滞なく開示いたします。',
+              ],
+              ['メールアドレス', 'mikubeautyrun@gmail.com'],
+              ['販売価格', '各プラン・お申し込みページに表示された金額（税込）となります。'],
+              [
+                '引き渡し時期（役務の提供時期）',
+                'クレジットカード決済の場合、決済完了後、即時（または初回レッスン予約日）からご利用いただけます。銀行振込の場合、ご入金確認後からご利用いただけます。',
+              ],
+              ['お支払い方法', 'クレジットカード決済（Square）、銀行振込'],
+              [
+                '代金の支払時期',
+                '【クレジットカード決済】ご利用のカード会社の引落日となります。\n【銀行振込】お申し込み後、指定の期日までにお振込みください（原則、レッスン開始前までのご入金となります）。',
+              ],
+              [
+                'キャンセル・返金に関しまして',
+                'お申し込み完了（ご入金）後、およびレッスン開始後の途中解約・中途キャンセルに際してのご返金には、いかなる理由でも応じかねます。\n万が一、二重決済などの不具合により返金が発生した場合は、返金にかかる振込手数料や決済手数料等はお客さまのご負担となります。',
+              ],
+            ].map(([title, content], idx, arr) => (
+              <div
+                key={title}
+                style={{
+                  paddingBottom: 16,
+                  marginBottom: idx === arr.length - 1 ? 0 : 16,
+                  borderBottom: idx === arr.length - 1 ? 'none' : '1px solid #eaeaea',
+                }}
+              >
+                <dt style={{ fontWeight: 700, color: '#111', marginBottom: 4 }}>
+                  ■ {title}
+                </dt>
+                <dd style={{ margin: 0, whiteSpace: 'pre-wrap' }}>{content}</dd>
+              </div>
+            ))}
+          </dl>
         </div>
       </section>
     </main>
