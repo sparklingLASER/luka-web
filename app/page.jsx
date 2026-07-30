@@ -30,8 +30,8 @@ const lineButtonStyle = {
   cursor: 'pointer',
   textDecoration: 'none',
   display: 'inline-block',
-  textAlign: 'center' as const,
-  boxSizing: 'border-box' as const,
+  textAlign: 'center', // as const を削除
+  boxSizing: 'border-box', // as const を削除
 };
 
 export default function HomePage() {
@@ -116,8 +116,8 @@ export default function HomePage() {
               src={img}
               alt={`LUKA! メイン画像 ${index + 1}`}
               fill
-              priority={index === 0} // 最初の画像は優先読み込み
-              unoptimized // 外部画像の自動最適化設定がnext.config.jsになくても動作するように記述
+              priority={index === 0}
+              unoptimized
               style={{ objectFit: 'cover' }}
             />
           </div>
