@@ -620,7 +620,8 @@ export default function HomePage() {
               }}
             >
               <div style={{ fontSize: 18, fontWeight: 700, color: '#666', marginBottom: 18 }}>
-                1回　（単発購入は最低3回〜購入可能）
+                1回　
+                （単発購入は最低3回〜購入可能）
               </div>
               <div style={{ fontSize: 36, fontWeight: 800, color: '#111', lineHeight: 1.2 }}>
                 9,500
