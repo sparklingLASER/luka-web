@@ -157,7 +157,7 @@ export default function HomePage() {
           </div>
 
           <p style={{ marginTop: 18, fontSize: 'clamp(16px, 2.4vw, 26px)' }}>
-            ランニングのある暮らしで健康維持に特化したサービス
+            ランニングのある暮らしで健康促進に特化したサービス
           </p>
         </div>
       </section>
