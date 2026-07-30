@@ -113,7 +113,7 @@ export default function HomePage() {
           </div>
 
           <p style={{ marginTop: 18, fontSize: 'clamp(16px, 2.4vw, 26px)' }}>
-            ランニング・健康維持・ダイエットに特化したサービス
+            ランニングのある暮らしで健康維持に特化したサービス
           </p>
 
           <div style={{ marginTop: 28 }}>
@@ -208,7 +208,7 @@ export default function HomePage() {
         >
           <ul style={{ margin: 0, paddingLeft: 20, fontSize: 18 }}>
             <li>📍皇居周り</li>
-            <li>📍隅田川周り</li>
+    
           </ul>
 
           <p style={{ marginTop: 14, color: '#666', fontSize: 14 }}>
@@ -293,10 +293,10 @@ export default function HomePage() {
             }}
           >
             {[
-              ['◷', '対面60分対応（ボディメイクプランは90分）'],
+              ['◷', '対面50〜55分対応（ボディメイクプランは90分）'],
               ['💬', 'LINEでの食事案内有り'],
               ['📅', '毎日対応(※一部例外あり）'],
-              ['🗓️', '予約 6:00〜24:00'],
+              ['🗓️', '予約 7:00〜24:00'],
               ['📝', 'トレーニングメニュー作成'],
               ['🖥️', 'オンラインコーチングも対応（50分）'],
             ].map(([icon, text], index) => (
@@ -608,7 +608,7 @@ export default function HomePage() {
               gap: 20,
             }}
           >
-            {/* 1回 */}
+            {/* 1回 （単発購入は最低3回〜購入可能*/}
             <div
               style={{
                 background: '#fff',
