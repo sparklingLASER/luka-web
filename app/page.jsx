@@ -608,7 +608,7 @@ export default function HomePage() {
               gap: 20,
             }}
           >
-            {/* 1回 （単発購入は最低3回〜購入可能*/}
+            {/* 1回 （単発購入は最低3回〜購入可能）*/}
             <div
               style={{
                 background: '#fff',
