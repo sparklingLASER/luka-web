@@ -619,10 +619,13 @@ export default function HomePage() {
                 boxShadow: '0 8px 24px rgba(0,0,0,0.04)',
               }}
             >
-              <div style={{ fontSize: 18, fontWeight: 700, color: '#666', marginBottom: 18 }}>
-                1回　
-                （単発購入は最低3回〜購入可能）
-              </div>
+              <div style={{ fontSize: 18, fontWeight: 700, color: '#666', textAlign: 'center' }}>
+  1回
+</div>
+<div style={{ fontSize: 13, fontWeight: 500, color: '#666', textAlign: 'center', marginBottom: 18 }}>
+  （単発購入は最低3回〜購入可能）
+</div>
+
               <div style={{ fontSize: 36, fontWeight: 800, color: '#111', lineHeight: 1.2 }}>
                 9,500
                 <span style={{ fontSize: 16, fontWeight: 500, marginLeft: 2 }}>円</span>
