@@ -48,11 +48,48 @@ export default function HomePage() {
     <main
       style={{
         margin: 0,
+        paddingBottom: 80, // 固定CTAボタンとコンテンツの被りを防止する余白
         fontFamily: 'Arial, Helvetica, sans-serif',
         background: '#fff',
         color: '#111',
       }}
     >
+      {/* 画面固定の追尾CTAボタン */}
+      <div
+        style={{
+          position: 'fixed',
+          bottom: 16,
+          left: '50%',
+          transform: 'translateX(-50%)',
+          zIndex: 100,
+          width: 'calc(100% - 32px)',
+          maxWidth: 480,
+        }}
+      >
+        <a
+          href={LINE_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            display: 'block',
+            background: '#ff4081',
+            color: '#fff',
+            border: 0,
+            borderRadius: 999,
+            padding: '16px 24px',
+            fontSize: 'clamp(14px, 4vw, 18px)',
+            fontWeight: 800,
+            textAlign: 'center',
+            cursor: 'pointer',
+            textDecoration: 'none',
+            boxShadow: '0 8px 24px rgba(255, 64, 129, 0.5)',
+            letterSpacing: '0.02em',
+          }}
+        >
+          💬 無料カウンセリング&体験トレーニング
+        </a>
+      </div>
+
       <section
         style={{
           position: 'relative',
@@ -115,30 +152,6 @@ export default function HomePage() {
           <p style={{ marginTop: 18, fontSize: 'clamp(16px, 2.4vw, 26px)' }}>
             ランニングのある暮らしで健康維持に特化したサービス
           </p>
-
-          <div style={{ marginTop: 28 }}>
-            <a
-              href={LINE_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                display: 'inline-block',
-                background: '#ff4081',
-                color: '#fff',
-                border: 0,
-                borderRadius: 999,
-                padding: '16px 32px',
-                fontSize: 18,
-                fontWeight: 800,
-                cursor: 'pointer',
-                textDecoration: 'none',
-                boxShadow: '0 6px 18px rgba(255,64,129,0.45)',
-                letterSpacing: '0.02em',
-              }}
-            >
-              💬 無料カウンセリング&体験トレーニング
-            </a>
-          </div>
         </div>
       </section>
 
@@ -208,7 +221,6 @@ export default function HomePage() {
         >
           <ul style={{ margin: 0, paddingLeft: 20, fontSize: 18 }}>
             <li>📍皇居周り</li>
-    
           </ul>
 
           <p style={{ marginTop: 14, color: '#666', fontSize: 14 }}>
@@ -620,11 +632,11 @@ export default function HomePage() {
               }}
             >
               <div style={{ fontSize: 18, fontWeight: 700, color: '#666', textAlign: 'center' }}>
-  1回
-</div>
-<div style={{ fontSize: 13, fontWeight: 500, color: '#666', textAlign: 'center', marginBottom: 18 }}>
-  （単発購入は最低3回〜購入可能）
-</div>
+                1回
+              </div>
+              <div style={{ fontSize: 13, fontWeight: 500, color: '#666', textAlign: 'center', marginBottom: 18 }}>
+                （単発購入は最低3回〜購入可能）
+              </div>
 
               <div style={{ fontSize: 36, fontWeight: 800, color: '#111', lineHeight: 1.2 }}>
                 9,500
