@@ -30,8 +30,8 @@ const lineButtonStyle = {
   cursor: 'pointer',
   textDecoration: 'none',
   display: 'inline-block',
-  textAlign: 'center', // as const を削除
-  boxSizing: 'border-box', // as const を削除
+  textAlign: 'center',
+  boxSizing: 'border-box',
 };
 
 export default function HomePage() {
@@ -157,7 +157,7 @@ export default function HomePage() {
           </div>
 
           <p style={{ marginTop: 18, fontSize: 'clamp(16px, 2.4vw, 26px)' }}>
-            ランニングのある暮らしで健康促進に特化したサービス
+            ランニングのある暮らしで健康維持に特化したサービス
           </p>
         </div>
       </section>
@@ -251,17 +251,50 @@ export default function HomePage() {
             基礎代謝も上がりダイエットにも最適です。
           </p>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 16, marginBottom: 28 }}>
+          {/* 指導内容カード一覧（「毎日対応」を削除し中央寄せに設定） */}
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+              gap: 16,
+              justifyContent: 'center',
+              marginBottom: 28,
+            }}
+          >
             {[
               ['◷', '対面50〜55分対応（ボディメイクプランは90分）'],
               ['💬', 'LINEでの食事案内有り'],
-              ['📅', '毎日対応(※一部例外あり）'],
               ['🗓️', '予約 7:00〜24:00'],
               ['📝', 'トレーニングメニュー作成'],
               ['🖥️', 'オンラインコーチングも対応（50分）'],
             ].map(([icon, text], index) => (
-              <div key={index} style={{ background: '#fff1f6', borderRadius: 18, padding: '18px 16px', display: 'flex', alignItems: 'center', gap: 12, minHeight: 78 }}>
-                <div style={{ width: 40, height: 40, minWidth: 40, borderRadius: 12, background: '#e91e63', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 18, fontWeight: 700 }}>
+              <div
+                key={index}
+                style={{
+                  background: '#fff1f6',
+                  borderRadius: 18,
+                  padding: '18px 16px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: 12,
+                  minHeight: 78,
+                }}
+              >
+                <div
+                  style={{
+                    width: 40,
+                    height: 40,
+                    minWidth: 40,
+                    borderRadius: 12,
+                    background: '#e91e63',
+                    color: '#fff',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontSize: 18,
+                    fontWeight: 700,
+                  }}
+                >
                   {icon}
                 </div>
                 <div style={{ color: '#d81b60', fontSize: 16, fontWeight: 700, lineHeight: 1.7 }}>
