@@ -221,7 +221,7 @@ export default function HomePage() {
               }}
             >
               <span>📷</span>
-              <span>トレーナーのInstagramを見る</span>
+              <span>Instagram</span>
             </a>
           </div>
         </div>
