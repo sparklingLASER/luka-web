@@ -89,7 +89,7 @@ export default function HomePage() {
             letterSpacing: '0.02em',
           }}
         >
-          💬 無料カウンセリング&体験トレーニング
+          💬 無料相談＆カウンセリング
         </a>
       </div>
 
