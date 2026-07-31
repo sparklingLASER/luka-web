@@ -288,7 +288,7 @@ export default function HomePage() {
             {[
               ['◷', '対面50〜55分対応（ボディメイクプランは90分）'],
               ['💬', 'LINEでの食事案内有り'],
-              ['🗓️', '予約 7:00〜24:00'],
+              ['🗓️', '予約 要相談'],
               ['📝', 'トレーニングメニュー作成'],
               ['🖥️', 'オンラインコーチングも対応（50分）'],
             ].map(([icon, text], index) => (
@@ -343,7 +343,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 料金表 */}
+      {/* 料金表（オープン記念1万円引き価格） */}
       <section style={{ ...sectionStyle, paddingTop: 0 }}>
         <div style={{ textAlign: 'center', marginBottom: 32 }}>
           <h2 style={{ fontSize: 34, margin: 0, color: '#e91e63', fontWeight: 800, letterSpacing: '0.04em' }}>
