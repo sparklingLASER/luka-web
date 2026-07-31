@@ -12,6 +12,7 @@ const images = [
 ];
 
 const LINE_URL = 'https://lin.ee/8lCoeZj';
+const INSTAGRAM_URL = 'https://www.instagram.com/katoshin_san/?hl=ja';
 
 const sectionStyle = {
   maxWidth: 1100,
@@ -198,6 +199,30 @@ export default function HomePage() {
             <p>
               現在はランニングを通して健康維持やダイエット・ボディメイクをメインにお客様をサポート中。
             </p>
+
+            {/* Instagramリンクボタン */}
+            <a
+              href={INSTAGRAM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: 8,
+                marginTop: 12,
+                padding: '10px 20px',
+                borderRadius: 999,
+                background: 'linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)',
+                color: '#fff',
+                fontSize: 14,
+                fontWeight: 700,
+                textDecoration: 'none',
+                boxShadow: '0 4px 12px rgba(220, 39, 67, 0.25)',
+              }}
+            >
+              <span>📷</span>
+              <span>トレーナーのInstagramを見る</span>
+            </a>
           </div>
         </div>
       </section>
@@ -251,7 +276,6 @@ export default function HomePage() {
             基礎代謝も上がりダイエットにも最適です。
           </p>
 
-          {/* 指導内容カード一覧（「毎日対応」を削除し中央寄せに設定） */}
           <div
             style={{
               display: 'grid',
