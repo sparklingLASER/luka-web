@@ -485,11 +485,11 @@ export default function HomePage() {
           <div style={{ maxWidth: 360, margin: '0 auto' }}>
             <div style={{ background: '#fff', border: '2px solid #fff1f6', borderRadius: 24, padding: 24, textAlign: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.04)' }}>
               <div style={{ fontSize: 18, fontWeight: 700, color: '#666', marginBottom: 4 }}>月額プラン</div>
-              <div style={{ fontSize: 14, color: '#666', marginBottom: 12 }}>どこでも受けられるオンライン指導（月2回のビデオ通話）</div>
+              <div style={{ fontSize: 14, color: '#666', marginBottom: 12 }}>どこでも受けられるオンライン指導（月4回のビデオ通話）</div>
               <div style={{ fontSize: 36, fontWeight: 800, color: '#111', lineHeight: 1.2 }}>
-                20,000 <span style={{ fontSize: 16, fontWeight: 500, marginLeft: 2 }}>円 / 月</span>
+                30,000 <span style={{ fontSize: 16, fontWeight: 500, marginLeft: 2 }}>円 / 月</span>
               </div>
-              <div style={{ fontSize: 14, color: '#999', marginTop: 4, marginBottom: 18 }}>(税込 22,000円)</div>
+              <div style={{ fontSize: 14, color: '#999', marginTop: 4, marginBottom: 18 }}>(税込 33,000円)</div>
               <a href={LINE_URL} target="_blank" rel="noopener noreferrer" style={lineButtonStyle}>
                 申し込む
               </a>
