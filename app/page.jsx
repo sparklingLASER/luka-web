@@ -20,21 +20,6 @@ const sectionStyle = {
   padding: '72px 24px',
 };
 
-const lineButtonStyle = {
-  width: '100%',
-  padding: '12px 16px',
-  borderRadius: 999,
-  border: '2px solid #ff4081',
-  background: '#ff4081',
-  color: '#fff',
-  fontWeight: 700,
-  cursor: 'pointer',
-  textDecoration: 'none',
-  display: 'inline-block',
-  textAlign: 'center',
-  boxSizing: 'border-box',
-};
-
 export default function HomePage() {
   const [currentImage, setCurrentImage] = useState(0);
   const [isTokushoOpen, setIsTokushoOpen] = useState(false);
@@ -371,12 +356,9 @@ export default function HomePage() {
                 <span style={{ fontSize: 14, fontWeight: 500, color: '#111', marginBottom: 3 }}>円 / 月</span>
               </div>
               <div style={{ fontSize: 13, color: '#999', marginTop: 6, marginBottom: 6 }}>（税込 110,000円）</div>
-              <div style={{ fontSize: 13, color: '#e91e63', fontWeight: 700, marginBottom: 18 }}>
+              <div style={{ fontSize: 13, color: '#e91e63', fontWeight: 700 }}>
                 14回以上でランニングプラン12回の単価よりお得
               </div>
-              <a href={LINE_URL} target="_blank" rel="noopener noreferrer" style={lineButtonStyle}>
-                申し込む
-              </a>
             </div>
           </div>
         </div>
@@ -397,10 +379,7 @@ export default function HomePage() {
                   <span style={{ fontSize: 14, fontWeight: 500, color: '#111', marginBottom: 3 }}>円 / 月</span>
                 </div>
                 <div style={{ fontSize: 13, color: '#999', marginTop: 6, marginBottom: 6 }}>（税込 {plan.taxPrice}円）</div>
-                <div style={{ fontSize: 13, color: '#e91e63', fontWeight: 700, marginBottom: 18 }}>1回あたり {plan.unitPrice}円 / 回</div>
-                <a href={LINE_URL} target="_blank" rel="noopener noreferrer" style={lineButtonStyle}>
-                  申し込む
-                </a>
+                <div style={{ fontSize: 13, color: '#e91e63', fontWeight: 700 }}>1回あたり {plan.unitPrice}円 / 回</div>
               </div>
             ))}
           </div>
@@ -422,10 +401,7 @@ export default function HomePage() {
                   <span style={{ fontSize: 14, fontWeight: 500, color: '#111', marginBottom: 3 }}>円 / 月</span>
                 </div>
                 <div style={{ fontSize: 13, color: '#999', marginTop: 6, marginBottom: 6 }}>（税込 {plan.taxPrice}円）</div>
-                <div style={{ fontSize: 13, color: '#e91e63', fontWeight: 700, marginBottom: 18 }}>1回あたり {plan.unitPrice}円 / 回</div>
-                <a href={LINE_URL} target="_blank" rel="noopener noreferrer" style={lineButtonStyle}>
-                  申し込む
-                </a>
+                <div style={{ fontSize: 13, color: '#e91e63', fontWeight: 700 }}>1回あたり {plan.unitPrice}円 / 回</div>
               </div>
             ))}
           </div>
@@ -438,15 +414,11 @@ export default function HomePage() {
             {/* 1回 */}
             <div style={{ background: '#fff', border: '2px solid #fff1f6', borderRadius: 24, padding: 24, textAlign: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.04)' }}>
               <div style={{ fontSize: 18, fontWeight: 700, color: '#666' }}>1回</div>
-              <div style={{ fontSize: 13, fontWeight: 500, color: '#666', marginBottom: 18 }}></div>
-              <div style={{ fontSize: 36, fontWeight: 800, color: '#111', lineHeight: 1.2 }}>
+              <div style={{ fontSize: 36, fontWeight: 800, color: '#111', lineHeight: 1.2, marginTop: 12 }}>
                 9,500 <span style={{ fontSize: 16, fontWeight: 500, marginLeft: 2 }}>円</span>
               </div>
               <div style={{ fontSize: 14, color: '#999', marginTop: 4, marginBottom: 6 }}>(税込 10,450円)</div>
-              <div style={{ fontSize: 13, color: '#e91e63', fontWeight: 700, marginBottom: 18 }}>1回あたり 10,450円 / 回</div>
-              <a href={LINE_URL} target="_blank" rel="noopener noreferrer" style={lineButtonStyle}>
-                申し込む
-              </a>
+              <div style={{ fontSize: 13, color: '#e91e63', fontWeight: 700 }}>1回あたり 10,450円 / 回</div>
             </div>
 
             {/* 10回 */}
@@ -457,10 +429,7 @@ export default function HomePage() {
                 <span style={{ fontSize: 14, fontWeight: 500, color: '#111', marginBottom: 3 }}>円 / 10回</span>
               </div>
               <div style={{ fontSize: 13, color: '#999', marginTop: 6, marginBottom: 6 }}>（税込 99,000円）</div>
-              <div style={{ fontSize: 13, color: '#e91e63', fontWeight: 700, marginBottom: 18 }}>1回あたり 9,900円 / 回</div>
-              <a href={LINE_URL} target="_blank" rel="noopener noreferrer" style={lineButtonStyle}>
-                申し込む
-              </a>
+              <div style={{ fontSize: 13, color: '#e91e63', fontWeight 700 }}>1回あたり 9,900円 / 回</div>
             </div>
 
             {/* 20回 */}
@@ -471,28 +440,54 @@ export default function HomePage() {
                 <span style={{ fontSize: 14, fontWeight: 500, color: '#111', marginBottom: 3 }}>円 / 20回</span>
               </div>
               <div style={{ fontSize: 13, color: '#999', marginTop: 6, marginBottom: 6 }}>（税込 176,000円）</div>
-              <div style={{ fontSize: 13, color: '#e91e63', fontWeight: 700, marginBottom: 18 }}>1回あたり 8,800円 / 回</div>
-              <a href={LINE_URL} target="_blank" rel="noopener noreferrer" style={lineButtonStyle}>
-                申し込む
-              </a>
+              <div style={{ fontSize: 13, color: '#e91e63', fontWeight: 700 }}>1回あたり 8,800円 / 回</div>
             </div>
           </div>
         </div>
 
         {/* オンラインコーチング */}
-        <div>
-          <h3 style={{ fontSize: 24, color: '#e91e63', marginBottom: 16 }}>オンラインコーチング（サブスクリプション）</h3>
-          <div style={{ maxWidth: 360, margin: '0 auto' }}>
+        <div style={{ marginBottom: 48 }}>
+          <h3 style={{ fontSize: 24, color: '#e91e63', marginBottom: 16 }}>オンラインコーチング</h3>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 20 }}>
+            {/* 月2回 */}
             <div style={{ background: '#fff', border: '2px solid #fff1f6', borderRadius: 24, padding: 24, textAlign: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.04)' }}>
-              <div style={{ fontSize: 18, fontWeight: 700, color: '#666', marginBottom: 4 }}>月額プラン</div>
-              <div style={{ fontSize: 14, color: '#666', marginBottom: 12 }}>どこでも受けられるオンライン指導（月4回のビデオ通話）</div>
+              <div style={{ fontSize: 18, fontWeight: 700, color: '#666', marginBottom: 12 }}>月2回 オンラインミーティング</div>
+              <div style={{ fontSize: 36, fontWeight: 800, color: '#111', lineHeight: 1.2 }}>
+                15,000 <span style={{ fontSize: 16, fontWeight: 500, marginLeft: 2 }}>円 / 月</span>
+              </div>
+              <div style={{ fontSize: 13, color: '#999', marginTop: 6 }}>（税込 16,500円）</div>
+            </div>
+
+            {/* 月4回 */}
+            <div style={{ background: '#fff', border: '2px solid #fff1f6', borderRadius: 24, padding: 24, textAlign: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.04)' }}>
+              <div style={{ fontSize: 18, fontWeight: 700, color: '#666', marginBottom: 12 }}>月4回 オンラインミーティング</div>
               <div style={{ fontSize: 36, fontWeight: 800, color: '#111', lineHeight: 1.2 }}>
                 30,000 <span style={{ fontSize: 16, fontWeight: 500, marginLeft: 2 }}>円 / 月</span>
               </div>
-              <div style={{ fontSize: 14, color: '#999', marginTop: 4, marginBottom: 18 }}>(税込 33,000円)</div>
-              <a href={LINE_URL} target="_blank" rel="noopener noreferrer" style={lineButtonStyle}>
-                申し込む
-              </a>
+              <div style={{ fontSize: 13, color: '#999', marginTop: 6 }}>（税込 33,000円）</div>
+            </div>
+
+            {/* 月8回（食事指導込） */}
+            <div style={{ background: '#fff', border: '2px solid #fff1f6', borderRadius: 24, padding: 24, textAlign: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.04)' }}>
+              <div style={{ fontSize: 18, fontWeight: 700, color: '#666', marginBottom: 12 }}>月8回 オンラインミーティング（食事指導込）</div>
+              <div style={{ fontSize: 36, fontWeight: 800, color: '#111', lineHeight: 1.2 }}>
+                44,000 <span style={{ fontSize: 16, fontWeight: 500, marginLeft: 2 }}>円 / 月</span>
+              </div>
+              <div style={{ fontSize: 13, color: '#999', marginTop: 6 }}>（税込 48,400円）</div>
+            </div>
+          </div>
+        </div>
+
+        {/* 食事指導 */}
+        <div>
+          <h3 style={{ fontSize: 24, color: '#e91e63', marginBottom: 16 }}>食事指導</h3>
+          <div style={{ maxWidth: 360, margin: '0 auto' }}>
+            <div style={{ background: '#fff', border: '2px solid #fff1f6', borderRadius: 24, padding: 24, textAlign: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.04)' }}>
+              <div style={{ fontSize: 18, fontWeight: 700, color: '#666', marginBottom: 12 }}>食事指導プラン</div>
+              <div style={{ fontSize: 36, fontWeight: 800, color: '#111', lineHeight: 1.2 }}>
+                25,000 <span style={{ fontSize: 16, fontWeight: 500, marginLeft: 2 }}>円</span>
+              </div>
+              <div style={{ fontSize: 13, color: '#999', marginTop: 6 }}>（税込 27,500円）</div>
             </div>
           </div>
         </div>
