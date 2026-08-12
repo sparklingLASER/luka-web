@@ -429,7 +429,7 @@ export default function HomePage() {
                 <span style={{ fontSize: 14, fontWeight: 500, color: '#111', marginBottom: 3 }}>円 / 10回</span>
               </div>
               <div style={{ fontSize: 13, color: '#999', marginTop: 6, marginBottom: 6 }}>（税込 99,000円）</div>
-              <div style={{ fontSize: 13, color: '#e91e63', fontWeight 700 }}>1回あたり 9,900円 / 回</div>
+              <div style={{ fontSize: 13, color: '#e91e63', fontWeight: 700 }}>1回あたり 9,900円 / 回</div>
             </div>
 
             {/* 20回 */}
