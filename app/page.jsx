@@ -272,7 +272,7 @@ export default function HomePage() {
           >
             {[
               ['◷', '対面50〜55分対応（ボディメイクプランは90分）'],
-              ['💬', 'LINEでの食事案内有り'],
+              ['💬', 'LINEでの食事案内有り（オンラインコーチング月2回・月4回は対象外）'],
               ['🗓️', '予約 要相談'],
               ['📝', 'トレーニングメニュー作成'],
               ['🖥️', 'オンラインコーチングも対応（50分）'],
@@ -453,9 +453,9 @@ export default function HomePage() {
             <div style={{ background: '#fff', border: '2px solid #fff1f6', borderRadius: 24, padding: 24, textAlign: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.04)' }}>
               <div style={{ fontSize: 18, fontWeight: 700, color: '#666', marginBottom: 12 }}>月2回 オンラインミーティング</div>
               <div style={{ fontSize: 36, fontWeight: 800, color: '#111', lineHeight: 1.2 }}>
-                15,000 <span style={{ fontSize: 16, fontWeight: 500, marginLeft: 2 }}>円 / 月</span>
+                17,500 <span style={{ fontSize: 16, fontWeight: 500, marginLeft: 2 }}>円 / 月</span>
               </div>
-              <div style={{ fontSize: 13, color: '#999', marginTop: 6 }}>（税込 16,500円）</div>
+              <div style={{ fontSize: 13, color: '#999', marginTop: 6 }}>（税込 19,250円）</div>
             </div>
 
             {/* 月4回 */}
