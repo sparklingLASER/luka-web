@@ -467,13 +467,13 @@ export default function HomePage() {
               <div style={{ fontSize: 13, color: '#999', marginTop: 6 }}>（税込 33,000円）</div>
             </div>
 
-            {/* 月8回（食事指導込） */}
+            {/* 月8回 */}
             <div style={{ background: '#fff', border: '2px solid #fff1f6', borderRadius: 24, padding: 24, textAlign: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.04)' }}>
               <div style={{ fontSize: 18, fontWeight: 700, color: '#666', marginBottom: 12 }}>月8回　オンライントレーニング</div>
               <div style={{ fontSize: 36, fontWeight: 800, color: '#111', lineHeight: 1.2 }}>
-                44,000 <span style={{ fontSize: 16, fontWeight: 500, marginLeft: 2 }}>円 / 月</span>
+                60,000 <span style={{ fontSize: 16, fontWeight: 500, marginLeft: 2 }}>円 / 月</span>
               </div>
-              <div style={{ fontSize: 13, color: '#999', marginTop: 6 }}>（税込 48,400円）</div>
+              <div style={{ fontSize: 13, color: '#999', marginTop: 6 }}>（税込 66,000円）</div>
             </div>
           </div>
         </div>
