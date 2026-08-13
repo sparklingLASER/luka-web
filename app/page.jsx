@@ -473,7 +473,7 @@ export default function HomePage() {
               <div style={{ fontSize: 36, fontWeight: 800, color: '#111', lineHeight: 1.2 }}>
                 54,000 <span style={{ fontSize: 16, fontWeight: 500, marginLeft: 2 }}>円 / 月</span>
               </div>
-              <div style={{ fontSize: 13, color: '#999', marginTop: 6 }}>（税込 60,000円）</div>
+              <div style={{ fontSize: 13, color: '#999', marginTop: 6 }}>（税込 59,400円）</div>
             </div>
           </div>
         </div>
