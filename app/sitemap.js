@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = 'https://www.lukarunninng.com';
+  const baseUrl = 'https://lukarunning.com';
 
   return [
     {
