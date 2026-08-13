@@ -451,7 +451,7 @@ export default function HomePage() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 20 }}>
             {/* 月2回 */}
             <div style={{ background: '#fff', border: '2px solid #fff1f6', borderRadius: 24, padding: 24, textAlign: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.04)' }}>
-              <div style={{ fontSize: 18, fontWeight: 700, color: '#666', marginBottom: 12 }}>月2回 オンラインミーティング</div>
+              <div style={{ fontSize: 18, fontWeight: 700, color: '#666', marginBottom: 12 }}>月2回 オンライントレーニング</div>
               <div style={{ fontSize: 36, fontWeight: 800, color: '#111', lineHeight: 1.2 }}>
                 17,500 <span style={{ fontSize: 16, fontWeight: 500, marginLeft: 2 }}>円 / 月</span>
               </div>
@@ -460,7 +460,7 @@ export default function HomePage() {
 
             {/* 月4回 */}
             <div style={{ background: '#fff', border: '2px solid #fff1f6', borderRadius: 24, padding: 24, textAlign: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.04)' }}>
-              <div style={{ fontSize: 18, fontWeight: 700, color: '#666', marginBottom: 12 }}>月4回 オンラインミーティング</div>
+              <div style={{ fontSize: 18, fontWeight: 700, color: '#666', marginBottom: 12 }}>月4回 オンライントレーニング</div>
               <div style={{ fontSize: 36, fontWeight: 800, color: '#111', lineHeight: 1.2 }}>
                 30,000 <span style={{ fontSize: 16, fontWeight: 500, marginLeft: 2 }}>円 / 月</span>
               </div>
@@ -469,7 +469,7 @@ export default function HomePage() {
 
             {/* 月8回（食事指導込） */}
             <div style={{ background: '#fff', border: '2px solid #fff1f6', borderRadius: 24, padding: 24, textAlign: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.04)' }}>
-              <div style={{ fontSize: 18, fontWeight: 700, color: '#666', marginBottom: 12 }}>オンラインボディメイク　月4回オンラインミーティング（食事指導込）</div>
+              <div style={{ fontSize: 18, fontWeight: 700, color: '#666', marginBottom: 12 }}>月8回　オンライントレーニング</div>
               <div style={{ fontSize: 36, fontWeight: 800, color: '#111', lineHeight: 1.2 }}>
                 44,000 <span style={{ fontSize: 16, fontWeight: 500, marginLeft: 2 }}>円 / 月</span>
               </div>
@@ -477,20 +477,7 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-
-        {/* 食事指導 */}
-        <div>
-          <h3 style={{ fontSize: 24, color: '#e91e63', marginBottom: 16 }}>食事指導</h3>
-          <div style={{ maxWidth: 360, margin: '0 auto' }}>
-            <div style={{ background: '#fff', border: '2px solid #fff1f6', borderRadius: 24, padding: 24, textAlign: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.04)' }}>
-              <div style={{ fontSize: 18, fontWeight: 700, color: '#666', marginBottom: 12 }}>食事指導プラン</div>
-              <div style={{ fontSize: 36, fontWeight: 800, color: '#111', lineHeight: 1.2 }}>
-                25,000 <span style={{ fontSize: 16, fontWeight: 500, marginLeft: 2 }}>円</span>
-              </div>
-              <div style={{ fontSize: 13, color: '#999', marginTop: 6 }}>（税込 27,500円）</div>
-            </div>
-          </div>
-        </div>
+        
       </section>
 
       {/* 特定商取引法に基づく表記 */}
