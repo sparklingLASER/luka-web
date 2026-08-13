@@ -4,6 +4,6 @@ export default function robots() {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://www.lukarunninng.com/sitemap.xml',
+    sitemap: 'https://lukarunning.com/sitemap.xml',
   };
 }
