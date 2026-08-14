@@ -6,9 +6,13 @@ import Image from 'next/image';
 const images = [
   // 1枚目：青い服のトレーナーと歩く写真
   'https://files.manuscdn.com/user_upload_by_module/session_file/310519663510938442/rNEfBOsUZZCtJHai.jpg',
-  // 2枚目：皇居周辺を並走する写真
-  'https://files.manuscdn.com/user_upload_by_module/session_file/310519663510938442/qyfcWbsNasUdVuHC.jpg',
-  // 3枚目：皇居のお堀沿いを走る写真
+  // 2枚目：二人で走っている写真
+  'https://files.manuscdn.com/user_upload_by_module/session_file/310519663510938442/vHvCUOWGkElgrHkB.jpg',
+  // 3枚目：女性の写真
+  'https://files.manuscdn.com/user_upload_by_module/session_file/310519663510938442/lJXuluxNSHVGpHEi.jpg',
+  // 4枚目：青い服で走っている写真
+  'https://files.manuscdn.com/user_upload_by_module/session_file/310519663510938442/ADttdtEXlroBzMqV.jpg',
+  // 5枚目：皇居のお堀沿いを走る写真
   'https://files.manuscdn.com/user_upload_by_module/session_file/310519663510938442/cyodKfLkbBjiaRGZ.webp',
 ];
 
