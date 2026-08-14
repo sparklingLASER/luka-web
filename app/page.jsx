@@ -193,7 +193,7 @@ export default function HomePage() {
               <li>100kgのお客様を5カ月で-10kg＆マラソン完走までサポート</li>
             </ul>
             <p>
-              現在はランニングを通して健康維持やダイエット・ボディメイクをメインにお客様をサポート中。
+              現在は痛みや体形を改善してマラソン完走やダイエットをメインにお客様をサポート中。
             </p>
 
             {/* Instagramリンクボタン */}
@@ -263,13 +263,12 @@ export default function HomePage() {
         <div style={{ background: '#fff', borderRadius: 28, padding: 36, boxShadow: '0 10px 30px rgba(0,0,0,0.08)', lineHeight: 1.9 }}>
           <div style={{ borderLeft: '8px solid #e91e63', paddingLeft: 18, marginBottom: 24 }}>
             <p style={{ margin: 0, color: '#e91e63', fontSize: 20, fontWeight: 800, lineHeight: 1.6 }}>
-              ランニング指導を軸にドリルやトレーニングメニュー作成・オンラインコーチングを取り入れます。
+              ランニング指導を軸にパーソナルやトレーニングメニュー作成・オンライントレーニングを取り入れます。
             </p>
           </div>
 
           <p style={{ margin: '0 0 24px', fontSize: 16, color: '#333' }}>
-            マンツーマンでの指導を行っています。遅筋繊維を鍛えると効率的に酸素を利用し脂肪を燃やすため、
-            基礎代謝も上がりダイエットにも最適です。
+            マンツーマンでの指導を行っています。痛みの出ないランニングフォームや動き作りをお客様一人ひとり提供致します。
           </p>
 
           <div
@@ -283,10 +282,10 @@ export default function HomePage() {
           >
             {[
               ['◷', '対面50〜55分対応（ボディメイクプランは90分）'],
-              ['💬', 'LINEでの食事案内有り（オンラインコーチング月2回・月4回は対象外）'],
-              ['🗓️', '予約 要相談'],
+              ['💬', 'LINEでの食事案内有り'],
+              ['🗓️', '予約 8/14現在要相談'],
               ['📝', 'トレーニングメニュー作成'],
-              ['🖥️', 'オンラインコーチングも対応（50分）'],
+              ['🖥️', 'ランナーの為のオンライントレーニングも対応（50分）'],
             ].map(([icon, text], index) => (
               <div
                 key={index}
@@ -456,9 +455,9 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* オンラインコーチング */}
+        {/* オンライントレーニング */}
         <div style={{ marginBottom: 48 }}>
-          <h3 style={{ fontSize: 24, color: '#e91e63', marginBottom: 16 }}>オンラインコーチング</h3>
+          <h3 style={{ fontSize: 24, color: '#e91e63', marginBottom: 16 }}>オンライントレーニング</h3>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 20 }}>
             {/* 月2回 */}
             <div style={{ background: '#fff', border: '2px solid #fff1f6', borderRadius: 24, padding: 24, textAlign: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.04)' }}>
