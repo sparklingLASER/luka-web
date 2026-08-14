@@ -4,12 +4,14 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
 const images = [
-  'https://ucarecdn.com/b2a966ca-4cae-4957-a7db-bb4422eb6473/-/format/auto/',
-  'https://ucarecdn.com/cdf14445-1c9e-455b-994c-cdd42d93e419/-/quality/best/-/format/auto/',
-  'https://ucarecdn.com/7b3af292-24da-4a95-819d-e7ba2fed011c/-/quality/best/-/format/auto/',
-  'https://ucarecdn.com/fab3fb29-3619-431c-ac83-fb93d654ea44/-/quality/best/-/format/auto/',
-  'https://ucarecdn.com/c151e40a-9f1c-45cf-806e-6c5ede935d9f/-/quality/best/-/format/auto/',
+  // 1枚目：青い服のトレーナーと歩く写真
+  'https://files.manuscdn.com/user_upload_by_module/session_file/310519663510938442/rNEfBOsUZZCtJHai.jpg',
+  // 2枚目：皇居周辺を並走する写真
+  'https://files.manuscdn.com/user_upload_by_module/session_file/310519663510938442/qyfcWbsNasUdVuHC.jpg',
+  // 3枚目：皇居のお堀沿いを走る写真
+  'https://files.manuscdn.com/user_upload_by_module/session_file/310519663510938442/cyodKfLkbBjiaRGZ.webp',
 ];
+
 
 const LINE_URL = 'https://lin.ee/8lCoeZj';
 const INSTAGRAM_URL = 'https://www.instagram.com/katoshin_san/?hl=ja';
