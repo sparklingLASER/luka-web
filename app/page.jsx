@@ -153,7 +153,8 @@ export default function HomePage() {
           </div>
 
           <p style={{ marginTop: 18, fontSize: 'clamp(16px, 2.4vw, 26px)' }}>
-            ランニングのある暮らしで健康維持に特化したサービス
+            怪我や痛みを無くしてマラソン完走・ダイエットの
+            ランニングパーソナルトレーニング
           </p>
         </div>
       </section>
