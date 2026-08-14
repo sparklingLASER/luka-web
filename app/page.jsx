@@ -106,7 +106,11 @@ export default function HomePage() {
               fill
               priority={index === 0}
               unoptimized
-              style={{ objectFit: 'cover' }}
+              style={{
+  objectFit: 'cover',
+  objectPosition: index === 0 ? 'center 20%' : 'center',
+}}
+
             />
           </div>
         ))}
