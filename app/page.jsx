@@ -554,6 +554,12 @@ export default function HomePage() {
           >
             {[
               {
+                title: "月2回",
+                price: "18,000",
+                taxPrice: "19,800",
+                unitPrice: "9,900",
+              },
+              {
                 title: "月4回",
                 price: "34,000",
                 taxPrice: "37,400",
@@ -610,7 +616,7 @@ export default function HomePage() {
                       lineHeight: 1,
                     }}
                   >
-                    {plan.price}
+                    {plan.taxPrice}
                   </span>
                   <span
                     style={{
@@ -631,7 +637,7 @@ export default function HomePage() {
                     marginBottom: 6,
                   }}
                 >
-                  （税込 {plan.taxPrice}円）
+                  （税別 {plan.price}円）
                 </div>
                 <div
                   style={{ fontSize: 13, color: "#e91e63", fontWeight: 700 }}
@@ -656,6 +662,12 @@ export default function HomePage() {
             }}
           >
             {[
+              {
+                title: "月2回",
+                price: "25,455",
+                taxPrice: "28,000",
+                unitPrice: "14,000",
+              },
               {
                 title: "月4回",
                 price: "48,000",
@@ -713,7 +725,7 @@ export default function HomePage() {
                       lineHeight: 1,
                     }}
                   >
-                    {plan.price}
+                    {plan.taxPrice}
                   </span>
                   <span
                     style={{
@@ -734,7 +746,7 @@ export default function HomePage() {
                     marginBottom: 6,
                   }}
                 >
-                  （税込 {plan.taxPrice}円）
+                  （税別 {plan.price}円）
                 </div>
                 <div
                   style={{ fontSize: 13, color: "#e91e63", fontWeight: 700 }}
@@ -746,10 +758,10 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* 一括プラン */}
+        {/* 単発・回数券プラン */}
         <div style={{ marginBottom: 48 }}>
           <h3 style={{ fontSize: 24, color: "#e91e63", marginBottom: 16 }}>
-            一括プラン
+            単発・回数券プラン
           </h3>
           <div
             style={{
