@@ -510,7 +510,7 @@ export default function HomePage() {
                     lineHeight: 1,
                   }}
                 >
-                  100,000
+                  100000
                 </span>
                 <span
                   style={{
