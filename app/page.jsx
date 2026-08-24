@@ -491,7 +491,7 @@ export default function HomePage() {
                   lineHeight: 1.7,
                 }}
               >
-                税込110,000円 ÷ 来店回数
+                税込110000円 ÷ 来店回数
               </div>
               <div
                 style={{
@@ -531,7 +531,7 @@ export default function HomePage() {
                   marginBottom: 6,
                 }}
               >
-                （税込 110,000円）
+                （税込 110000円）
               </div>
               <div style={{ fontSize: 13, color: "#e91e63", fontWeight: 700 }}>
                 月14回以上のご利用で、ランニングプラン月12回より1回あたりがお得
@@ -555,27 +555,27 @@ export default function HomePage() {
             {[
               {
                 title: "月2回",
-                price: "18,000",
-                taxPrice: "19,800",
-                unitPrice: "9,900",
+                price: "18000",
+                taxPrice: "19800",
+                unitPrice: "9900",
               },
               {
                 title: "月4回",
-                price: "34,000",
-                taxPrice: "37,400",
-                unitPrice: "9,350",
+                price: "34000",
+                taxPrice: "37400",
+                unitPrice: "9350",
               },
               {
                 title: "月8回",
-                price: "64,000",
-                taxPrice: "70,400",
-                unitPrice: "8,800",
+                price: "64000",
+                taxPrice: "70400",
+                unitPrice: "8800",
               },
               {
                 title: "月12回",
-                price: "90,000",
-                taxPrice: "99,000",
-                unitPrice: "8,250",
+                price: "90000",
+                taxPrice: "99000",
+                unitPrice: "8250",
               },
             ].map((plan) => (
               <div
@@ -664,27 +664,27 @@ export default function HomePage() {
             {[
               {
                 title: "月2回",
-                price: "25,455",
-                taxPrice: "28,000",
-                unitPrice: "14,000",
+                price: "25455",
+                taxPrice: "28000",
+                unitPrice: "14000",
               },
               {
                 title: "月4回",
-                price: "48,000",
-                taxPrice: "52,800",
-                unitPrice: "13,200",
+                price: "48000",
+                taxPrice: "52800",
+                unitPrice: "13200",
               },
               {
                 title: "月8回",
-                price: "92,000",
-                taxPrice: "101,200",
-                unitPrice: "12,650",
+                price: "92000",
+                taxPrice: "101200",
+                unitPrice: "12650",
               },
               {
                 title: "月12回",
-                price: "132,000",
-                taxPrice: "145,200",
-                unitPrice: "12,100",
+                price: "132000",
+                taxPrice: "145200",
+                unitPrice: "12100",
               },
             ].map((plan) => (
               <div
@@ -793,7 +793,7 @@ export default function HomePage() {
                   marginTop: 12,
                 }}
               >
-                9,500{" "}
+                9500{" "}
                 <span style={{ fontSize: 16, fontWeight: 500, marginLeft: 2 }}>
                   円
                 </span>
@@ -806,10 +806,10 @@ export default function HomePage() {
                   marginBottom: 6,
                 }}
               >
-                (税込 10,450円)
+                (税込 10450円)
               </div>
               <div style={{ fontSize: 13, color: "#e91e63", fontWeight: 700 }}>
-                1回あたり 10,450円 / 回
+                1回あたり 10450円 / 回
               </div>
             </div>
 
@@ -850,7 +850,7 @@ export default function HomePage() {
                     lineHeight: 1,
                   }}
                 >
-                  90,000
+                  90000
                 </span>
                 <span
                   style={{
@@ -871,10 +871,10 @@ export default function HomePage() {
                   marginBottom: 6,
                 }}
               >
-                （税込 99,000円）
+                （税込 99000円）
               </div>
               <div style={{ fontSize: 13, color: "#e91e63", fontWeight: 700 }}>
-                1回あたり 9,900円 / 回
+                1回あたり 9900円 / 回
               </div>
             </div>
 
@@ -915,7 +915,7 @@ export default function HomePage() {
                     lineHeight: 1,
                   }}
                 >
-                  160,000
+                  160000
                 </span>
                 <span
                   style={{
@@ -936,10 +936,10 @@ export default function HomePage() {
                   marginBottom: 6,
                 }}
               >
-                （税込 176,000円）
+                （税込 176000円）
               </div>
               <div style={{ fontSize: 13, color: "#e91e63", fontWeight: 700 }}>
-                1回あたり 8,800円 / 回
+                1回あたり 8800円 / 回
               </div>
             </div>
           </div>
@@ -986,13 +986,13 @@ export default function HomePage() {
                   lineHeight: 1.2,
                 }}
               >
-                17,500{" "}
+                17500{" "}
                 <span style={{ fontSize: 16, fontWeight: 500, marginLeft: 2 }}>
                   円 / 月
                 </span>
               </div>
               <div style={{ fontSize: 13, color: "#999", marginTop: 6 }}>
-                （税込 19,250円）
+                （税込 19250円）
               </div>
             </div>
 
@@ -1025,13 +1025,13 @@ export default function HomePage() {
                   lineHeight: 1.2,
                 }}
               >
-                30,000{" "}
+                30000{" "}
                 <span style={{ fontSize: 16, fontWeight: 500, marginLeft: 2 }}>
                   円 / 月
                 </span>
               </div>
               <div style={{ fontSize: 13, color: "#999", marginTop: 6 }}>
-                （税込 33,000円）
+                （税込 33000円）
               </div>
             </div>
 
@@ -1064,13 +1064,13 @@ export default function HomePage() {
                   lineHeight: 1.2,
                 }}
               >
-                54,000{" "}
+                54000{" "}
                 <span style={{ fontSize: 16, fontWeight: 500, marginLeft: 2 }}>
                   円 / 月
                 </span>
               </div>
               <div style={{ fontSize: 13, color: "#999", marginTop: 6 }}>
-                （税込 59,400円）
+                （税込 59400円）
               </div>
             </div>
           </div>
