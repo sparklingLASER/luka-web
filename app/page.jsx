@@ -27,7 +27,6 @@ const sectionStyle = {
 
 export default function HomePage() {
   const [currentImage, setCurrentImage] = useState(0);
-  const [isTokushoOpen, setIsTokushoOpen] = useState(false);
 
   useEffect(() => {
     const id = setInterval(() => {
@@ -404,7 +403,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 料金表　*/}
+      {/* 料金表 */}
       <section style={{ ...sectionStyle, paddingTop: 0 }}>
         <div style={{ textAlign: "center", marginBottom: 32 }}>
           <h2
@@ -553,12 +552,6 @@ export default function HomePage() {
           >
             {[
               {
-                title: "月2回",
-                price: "18000",
-                taxPrice: "19800",
-                unitPrice: "9900",
-              },
-              {
                 title: "月4回",
                 price: "34000",
                 taxPrice: "37400",
@@ -661,12 +654,6 @@ export default function HomePage() {
             }}
           >
             {[
-              {
-                title: "月2回",
-                price: "25455",
-                taxPrice: "28000",
-                unitPrice: "14000",
-              },
               {
                 title: "月4回",
                 price: "48000",
@@ -876,313 +863,8 @@ export default function HomePage() {
                 1回あたり 9900円 / 回
               </div>
             </div>
-
-            {/* 20回 */}
-            <div
-              style={{
-                background: "#fff",
-                border: "2px solid #fff1f6",
-                borderRadius: 24,
-                padding: 24,
-                textAlign: "center",
-                boxShadow: "0 8px 24px rgba(0,0,0,0.04)",
-              }}
-            >
-              <div
-                style={{
-                  fontSize: 18,
-                  fontWeight: 700,
-                  color: "#666",
-                  marginBottom: 18,
-                }}
-              >
-                20回
-              </div>
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "flex-end",
-                  gap: 4,
-                }}
-              >
-                <span
-                  style={{
-                    fontSize: 32,
-                    fontWeight: 800,
-                    color: "#111",
-                    lineHeight: 1,
-                  }}
-                >
-                  160000
-                </span>
-                <span
-                  style={{
-                    fontSize: 14,
-                    fontWeight: 500,
-                    color: "#111",
-                    marginBottom: 3,
-                  }}
-                >
-                  円 / 20回
-                </span>
-              </div>
-              <div
-                style={{
-                  fontSize: 13,
-                  color: "#999",
-                  marginTop: 6,
-                  marginBottom: 6,
-                }}
-              >
-                （税込 176000円）
-              </div>
-              <div style={{ fontSize: 13, color: "#e91e63", fontWeight: 700 }}>
-                1回あたり 8800円 / 回
-              </div>
-            </div>
           </div>
         </div>
-
-        {/* オンライントレーニング */}
-        <div style={{ marginBottom: 48 }}>
-          <h3 style={{ fontSize: 24, color: "#e91e63", marginBottom: 16 }}>
-            オンライントレーニング
-          </h3>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-              gap: 20,
-            }}
-          >
-            {/* 月2回 */}
-            <div
-              style={{
-                background: "#fff",
-                border: "2px solid #fff1f6",
-                borderRadius: 24,
-                padding: 24,
-                textAlign: "center",
-                boxShadow: "0 8px 24px rgba(0,0,0,0.04)",
-              }}
-            >
-              <div
-                style={{
-                  fontSize: 18,
-                  fontWeight: 700,
-                  color: "#666",
-                  marginBottom: 12,
-                }}
-              >
-                月2回 オンライントレーニング
-              </div>
-              <div
-                style={{
-                  fontSize: 36,
-                  fontWeight: 800,
-                  color: "#111",
-                  lineHeight: 1.2,
-                }}
-              >
-                17500{" "}
-                <span style={{ fontSize: 16, fontWeight: 500, marginLeft: 2 }}>
-                  円 / 月
-                </span>
-              </div>
-              <div style={{ fontSize: 13, color: "#999", marginTop: 6 }}>
-                （税込 19250円）
-              </div>
-            </div>
-
-            {/* 月4回 */}
-            <div
-              style={{
-                background: "#fff",
-                border: "2px solid #fff1f6",
-                borderRadius: 24,
-                padding: 24,
-                textAlign: "center",
-                boxShadow: "0 8px 24px rgba(0,0,0,0.04)",
-              }}
-            >
-              <div
-                style={{
-                  fontSize: 18,
-                  fontWeight: 700,
-                  color: "#666",
-                  marginBottom: 12,
-                }}
-              >
-                月4回 オンライントレーニング
-              </div>
-              <div
-                style={{
-                  fontSize: 36,
-                  fontWeight: 800,
-                  color: "#111",
-                  lineHeight: 1.2,
-                }}
-              >
-                30000{" "}
-                <span style={{ fontSize: 16, fontWeight: 500, marginLeft: 2 }}>
-                  円 / 月
-                </span>
-              </div>
-              <div style={{ fontSize: 13, color: "#999", marginTop: 6 }}>
-                （税込 33000円）
-              </div>
-            </div>
-
-            {/* 月8回 */}
-            <div
-              style={{
-                background: "#fff",
-                border: "2px solid #fff1f6",
-                borderRadius: 24,
-                padding: 24,
-                textAlign: "center",
-                boxShadow: "0 8px 24px rgba(0,0,0,0.04)",
-              }}
-            >
-              <div
-                style={{
-                  fontSize: 18,
-                  fontWeight: 700,
-                  color: "#666",
-                  marginBottom: 12,
-                }}
-              >
-                月8回　オンライントレーニング
-              </div>
-              <div
-                style={{
-                  fontSize: 36,
-                  fontWeight: 800,
-                  color: "#111",
-                  lineHeight: 1.2,
-                }}
-              >
-                54000{" "}
-                <span style={{ fontSize: 16, fontWeight: 500, marginLeft: 2 }}>
-                  円 / 月
-                </span>
-              </div>
-              <div style={{ fontSize: 13, color: "#999", marginTop: 6 }}>
-                （税込 59400円）
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 特定商取引法に基づく表記 */}
-      <section
-        style={{
-          maxWidth: 1100,
-          margin: "0 auto",
-          padding: "48px 24px 24px",
-          borderTop: "1px solid #eee",
-          textAlign: "center",
-        }}
-      >
-        <button
-          onClick={() => setIsTokushoOpen((prev) => !prev)}
-          aria-expanded={isTokushoOpen}
-          style={{
-            background: "#f8f8f8",
-            color: "#555",
-            border: "1px solid #ddd",
-            borderRadius: 8,
-            padding: "12px 24px",
-            fontSize: 14,
-            fontWeight: 600,
-            cursor: "pointer",
-            display: "inline-flex",
-            alignItems: "center",
-            gap: 8,
-            transition: "all 0.2s ease",
-          }}
-        >
-          <span>特定商取引法に基づく表記</span>
-          <span
-            style={{
-              fontSize: 12,
-              transform: isTokushoOpen ? "rotate(180deg)" : "rotate(0deg)",
-              transition: "transform 0.2s ease",
-            }}
-          >
-            ▼
-          </span>
-        </button>
-
-        {isTokushoOpen && (
-          <div
-            style={{
-              marginTop: 24,
-              background: "#fafafa",
-              borderRadius: 16,
-              padding: "24px 28px",
-              fontSize: 14,
-              lineHeight: 1.8,
-              color: "#444",
-              textAlign: "left",
-              border: "1px solid #eee",
-            }}
-          >
-            <dl style={{ margin: 0 }}>
-              {[
-                ["販売事業者名（屋号）", "LUKA! Running＆Workout"],
-                ["運営責任者", "加藤慎之介"],
-                [
-                  "所在地",
-                  "お問合せ先メールアドレスにてご請求をいただければ、遅滞なく開示いたします。",
-                ],
-                [
-                  "電話番号",
-                  "お問合せ先メールアドレスにてご請求をいただければ、遅滞なく開示いたします。",
-                ],
-                ["メールアドレス", "mikubeautyrun@gmail.com"],
-                [
-                  "販売価格",
-                  "各プラン・お申し込みページに表示された金額（税込）となります。",
-                ],
-                [
-                  "引き渡し時期（役務の提供時期）",
-                  "決済確認後、初回レッスンの予約日から役務を提供します。オンラインサービスは案内後、予約日時に提供します。",
-                ],
-                ["お支払い方法", "クレジットカード決済（Square）、銀行振込"],
-                [
-                  "代金の支払時期",
-                  "【クレジットカード決済】ご利用のカード会社の引落日となります。\n【銀行振込】お申し込み後、指定の期日までにお振込みください（原則、レッスン開始前までのご入金となります）。",
-                ],
-                [
-                  "キャンセル・返金に関しまして",
-                  "キャンセル・返金条件は、お申し込み時にご案内する利用規約・予約規定をご確認ください。お申し込み完了後の途中解約・中途キャンセルについては、規定に基づき対応します。",
-                ],
-              ].map(([title, content], idx, arr) => (
-                <div
-                  key={title}
-                  style={{
-                    paddingBottom: 16,
-                    marginBottom: idx === arr.length - 1 ? 0 : 16,
-                    borderBottom:
-                      idx === arr.length - 1 ? "none" : "1px solid #eaeaea",
-                  }}
-                >
-                  <dt
-                    style={{ fontWeight: 700, color: "#111", marginBottom: 4 }}
-                  >
-                    ■ {title}
-                  </dt>
-                  <dd style={{ margin: 0, whiteSpace: "pre-wrap" }}>
-                    {content}
-                  </dd>
-                </div>
-              ))}
-            </dl>
-          </div>
-        )}
       </section>
     </main>
   );
