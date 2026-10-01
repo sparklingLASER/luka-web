@@ -335,7 +335,7 @@ export default function HomePage() {
             }}
           >
             {[
-              ["◷", "対面50〜55分（ボディメイクプランは90分）"],
+              ["◷", "対面50〜55分"],
               ["💬", "LINEで食事・練習をサポート"],
               ["🗓️", "予約枠はLINEでご案内"],
               ["🖥️", "オンライン指導にも対応（50分）"],
@@ -434,106 +434,6 @@ export default function HomePage() {
           />
         </div>
 
-        {/* 通い放題プラン */}
-        <div style={{ marginBottom: 48 }}>
-          <h3 style={{ fontSize: 24, color: "#e91e63", marginBottom: 16 }}>
-            通い放題プラン
-          </h3>
-          <div style={{ maxWidth: 420, margin: "0 auto" }}>
-            <div
-              style={{
-                background: "linear-gradient(180deg, #fff7fb 0%, #fff 100%)",
-                border: "2px solid #ff7eb3",
-                borderRadius: 24,
-                padding: 24,
-                textAlign: "center",
-                boxShadow: "0 12px 30px rgba(233,30,99,0.12)",
-                position: "relative",
-              }}
-            >
-              <div
-                style={{
-                  position: "absolute",
-                  top: -12,
-                  left: 20,
-                  background: "#e91e63",
-                  color: "#fff",
-                  fontSize: 12,
-                  fontWeight: 800,
-                  padding: "6px 12px",
-                  borderRadius: 999,
-                  letterSpacing: "0.04em",
-                }}
-              >
-                おすすめ
-              </div>
-              <div
-                style={{
-                  fontSize: 13,
-                  color: "#d81b60",
-                  marginBottom: 8,
-                  lineHeight: 1.7,
-                }}
-              >
-                回数制限なしでしっかり通いたい方におすすめ！
-              </div>
-              <div
-                style={{
-                  fontSize: 12,
-                  color: "#666",
-                  marginBottom: 10,
-                  lineHeight: 1.7,
-                }}
-              >
-                税込110000円 ÷ 来店回数
-              </div>
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "flex-end",
-                  gap: 4,
-                  marginTop: 6,
-                }}
-              >
-                <span
-                  style={{
-                    fontSize: 32,
-                    fontWeight: 800,
-                    color: "#111",
-                    lineHeight: 1,
-                  }}
-                >
-                  100000
-                </span>
-                <span
-                  style={{
-                    fontSize: 14,
-                    fontWeight: 500,
-                    color: "#111",
-                    marginBottom: 3,
-                  }}
-                >
-                  円 / 月
-                </span>
-              </div>
-              <div
-                style={{
-                  fontSize: 13,
-                  color: "#999",
-                  marginTop: 6,
-                  marginBottom: 6,
-                }}
-              >
-                （税込 110000円）
-              </div>
-              <div style={{ fontSize: 13, color: "#e91e63", fontWeight: 700 }}>
-                月14回以上のご利用で、ランニングプラン月12回より1回あたりがお得
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* ランニングプラン */}
         <div style={{ marginBottom: 48 }}>
           <h3 style={{ fontSize: 24, color: "#e91e63", marginBottom: 16 }}>
@@ -564,109 +464,6 @@ export default function HomePage() {
                 price: "90000",
                 taxPrice: "99000",
                 unitPrice: "8250",
-              },
-            ].map((plan) => (
-              <div
-                key={plan.title}
-                style={{
-                  background: "#fff",
-                  border: "2px solid #fff1f6",
-                  borderRadius: 24,
-                  padding: 24,
-                  textAlign: "center",
-                  boxShadow: "0 8px 24px rgba(0,0,0,0.04)",
-                }}
-              >
-                <div
-                  style={{
-                    fontSize: 18,
-                    fontWeight: 700,
-                    color: "#666",
-                    marginBottom: 12,
-                  }}
-                >
-                  {plan.title}
-                </div>
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "flex-end",
-                    gap: 4,
-                    marginTop: 6,
-                  }}
-                >
-                  <span
-                    style={{
-                      fontSize: 32,
-                      fontWeight: 800,
-                      color: "#111",
-                      lineHeight: 1,
-                    }}
-                  >
-                    {plan.taxPrice}
-                  </span>
-                  <span
-                    style={{
-                      fontSize: 14,
-                      fontWeight: 500,
-                      color: "#111",
-                      marginBottom: 3,
-                    }}
-                  >
-                    円 / 月
-                  </span>
-                </div>
-                <div
-                  style={{
-                    fontSize: 13,
-                    color: "#999",
-                    marginTop: 6,
-                    marginBottom: 6,
-                  }}
-                >
-                  （税別 {plan.price}円）
-                </div>
-                <div
-                  style={{ fontSize: 13, color: "#e91e63", fontWeight: 700 }}
-                >
-                  1回あたり {plan.unitPrice}円 / 回
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* ボディメイクプラン */}
-        <div style={{ marginBottom: 48 }}>
-          <h3 style={{ fontSize: 24, color: "#e91e63", marginBottom: 16 }}>
-            ボディメイクプラン（サブスクリプション）
-          </h3>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-              gap: 20,
-            }}
-          >
-            {[
-              {
-                title: "月4回",
-                price: "48000",
-                taxPrice: "52800",
-                unitPrice: "13200",
-              },
-              {
-                title: "月8回",
-                price: "92000",
-                taxPrice: "101200",
-                unitPrice: "12650",
-              },
-              {
-                title: "月12回",
-                price: "132000",
-                taxPrice: "145200",
-                unitPrice: "12100",
               },
             ].map((plan) => (
               <div
@@ -979,44 +776,6 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* 月8回 */}
-            <div
-              style={{
-                background: "#fff",
-                border: "2px solid #fff1f6",
-                borderRadius: 24,
-                padding: 24,
-                textAlign: "center",
-                boxShadow: "0 8px 24px rgba(0,0,0,0.04)",
-              }}
-            >
-              <div
-                style={{
-                  fontSize: 18,
-                  fontWeight: 700,
-                  color: "#666",
-                  marginBottom: 12,
-                }}
-              >
-                月8回　オンライントレーニング
-              </div>
-              <div
-                style={{
-                  fontSize: 36,
-                  fontWeight: 800,
-                  color: "#111",
-                  lineHeight: 1.2,
-                }}
-              >
-                54000{" "}
-                <span style={{ fontSize: 16, fontWeight: 500, marginLeft: 2 }}>
-                  円 / 月
-                </span>
-              </div>
-              <div style={{ fontSize: 13, color: "#999", marginTop: 6 }}>
-                （税込 59400円）
-              </div>
-            </div>
           </div>
         </div>
       </section>
