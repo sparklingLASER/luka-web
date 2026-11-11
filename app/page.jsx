@@ -239,7 +239,7 @@ export default function HomePage() {
             </div>
             <dl className={styles.heroFacts}>
               <div><dt>Based in</dt><dd>皇居周辺 / 東京</dd></div>
-              <div><dt>Focus</dt><dd>ランニング・ダイエット・お仕事のパフォーマンス向上</dd></div>
+              <div><dt>Focus</dt><dd>ランニング・身体づくり</dd></div>
               <div><dt>Style</dt><dd>マンツーマン指導</dd></div>
               <div><dt>Trainer</dt><dd>加藤慎之介</dd></div>
             </dl>
