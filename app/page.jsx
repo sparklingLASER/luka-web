@@ -37,18 +37,18 @@ const legalEntries = [
 const runningPlans = [
   {
     title: "月4回",
-    description: "皇居ラン2回＋オンライン筋トレ2回",
-    taxPrice: "37,400",
+    description: "皇居ラン2回＋オンラインミーティング２回",
+    taxPrice: "37400",
   },
   {
     title: "月4回",
     description: "皇居ラン4回",
-    taxPrice: "49,500",
+    taxPrice: "40000",
   },
   {
     title: "月4回",
-    description: "オンライン筋トレ4回",
-    taxPrice: "33,000",
+    description: "オンラインミーティング４回・食事案内・トレーニングメニュー作成",
+    taxPrice: "33000",
   },
 ];
 
