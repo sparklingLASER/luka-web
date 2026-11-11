@@ -37,44 +37,20 @@ const legalEntries = [
 const runningPlans = [
   {
     title: "月4回",
+    description: "皇居ラン2回＋オンライン筋トレ2回",
     taxPrice: "37,400",
-    price: "34,000",
-    unitPrice: "9,350",
   },
   {
-    title: "月8回",
-    taxPrice: "70,400",
-    price: "64,000",
-    unitPrice: "8,800",
+    title: "月4回",
+    description: "皇居ラン4回",
+    taxPrice: "49,500",
   },
   {
-    title: "月12回",
-    taxPrice: "99,000",
-    price: "90,000",
-    unitPrice: "8,250",
+    title: "月4回",
+    description: "オンライン筋トレ4回",
+    taxPrice: "33,000",
   },
 ];
-
-const ticketPlans = [
-  {
-    title: "10回",
-    taxPrice: "99,000",
-    price: "90,000",
-    unitPrice: "9,900",
-  },
-  {
-    title: "20回",
-    taxPrice: "176,000",
-    price: "160,000",
-    unitPrice: "8,800",
-  },
-];
-
-const onlinePlan = {
-  title: "月4回 オンライントレーニング",
-  taxPrice: "33,000",
-  price: "30,000",
-};
 
 const styles = {
   "alternate": "luka-alternate",
@@ -109,11 +85,10 @@ const styles = {
   "navigation": "luka-navigation",
   "navigationOpen": "luka-navigationOpen",
   "note": "luka-note",
-  "onlineDescription": "luka-onlineDescription",
-  "onlinePlan": "luka-onlinePlan",
   "plan": "luka-plan",
   "planGrid": "luka-planGrid",
   "planTitle": "luka-planTitle",
+  "planDescription": "luka-planDescription",
   "portrait": "luka-portrait",
   "portraitImage": "luka-portraitImage",
   "price": "luka-price",
@@ -136,8 +111,6 @@ const styles = {
   "trainerGrid": "luka-trainerGrid",
   "trainerName": "luka-trainerName",
   "trainingBottom": "luka-trainingBottom",
-  "twoColumns": "luka-twoColumns",
-  "unitPrice": "luka-unitPrice",
   "wordmark": "luka-wordmark",
   "wrap": "luka-wrap"
 };
@@ -165,14 +138,12 @@ function PlanItem({ plan, unit }) {
   return (
     <article className={styles.plan}>
       <h4 className={styles.planTitle}>{plan.title}</h4>
+      <p className={styles.planDescription}>{plan.description}</p>
       <p className={styles.price}>
         <span>{plan.taxPrice}</span>
         <span className={styles.priceUnit}>円<span> / {unit}</span></span>
       </p>
-      <p className={styles.taxNote}>税込 / 税別 {plan.price}円</p>
-      {plan.unitPrice && (
-        <p className={styles.unitPrice}>1回あたり {plan.unitPrice}円</p>
-      )}
+      <p className={styles.taxNote}>税込</p>
     </article>
   );
 }
@@ -239,7 +210,7 @@ export default function HomePage() {
             </div>
             <dl className={styles.heroFacts}>
               <div><dt>Based in</dt><dd>皇居周辺 / 東京</dd></div>
-              <div><dt>Focus</dt><dd>ランニング・身体づくり</dd></div>
+              <div><dt>Focus</dt><dd>ランニング・ダイエット・お仕事のパフォーマンス向上</dd></div>
               <div><dt>Style</dt><dd>マンツーマン指導</dd></div>
               <div><dt>Trainer</dt><dd>加藤慎之介</dd></div>
             </dl>
@@ -343,36 +314,19 @@ export default function HomePage() {
                 <h2 className={styles.sectionTitle}>料金表</h2>
               </div>
               <p className={styles.bodyCopy}>
-                すべて税込表示です。対面指導・練習メニュー作成・LINEでの継続サポートを、選択したプランに合わせて提供します。
+                すべて税込表示です。皇居でのランニングとオンライン筋トレを、選択したプランに合わせて提供します。
               </p>
             </div>
             <div className={styles.priceGroup}>
               <div className={styles.priceGroupHeading}>
-                <h3>ランニングプラン</h3>
+                <h3>月4回プラン</h3>
                 <span className={styles.categoryLabel}>Subscription</span>
               </div>
               <p className={styles.note}>サブスクリプション / 月額プラン</p>
               <div className={styles.planGrid}>
-                {runningPlans.map((plan) => <PlanItem key={plan.title} plan={plan} unit="月" />)}
-              </div>
-            </div>
-            <div className={styles.priceGroup}>
-              <div className={styles.priceGroupHeading}>
-                <h3>回数券プラン</h3>
-                <span className={styles.categoryLabel}>Ticket</span>
-              </div>
-              <div className={`${styles.planGrid} ${styles.twoColumns}`}>
-                {ticketPlans.map((plan) => <PlanItem key={plan.title} plan={plan} unit={plan.title} />)}
-              </div>
-            </div>
-            <div className={styles.priceGroup}>
-              <div className={styles.priceGroupHeading}>
-                <h3>オンライントレーニング</h3>
-                <span className={styles.categoryLabel}>Online</span>
-              </div>
-              <div className={styles.onlinePlan}>
-                <PlanItem plan={onlinePlan} unit="月" />
-                <p className={styles.onlineDescription}>オンライン指導にも対応（50分）</p>
+                {runningPlans.map((plan) => (
+                  <PlanItem key={plan.description} plan={plan} unit="月" />
+                ))}
               </div>
             </div>
           </div>
@@ -537,17 +491,14 @@ export default function HomePage() {
 .luka-priceGroupHeading h3 { font-family: var(--serif); font-size: 23px; font-weight: 400; line-height: 1.5; }
 .luka-categoryLabel { font-family: var(--mono); text-transform: uppercase; font-size: 10px; letter-spacing: 0.07em; color: var(--muted); }
 .luka-planGrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 30px; }
-.luka-twoColumns { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .luka-plan { padding: 10px 24px 12px; border-left: 1px solid var(--line); }
 .luka-plan:first-child { border-left: none; padding-left: 0; }
 .luka-planTitle { font-family: var(--mono); font-size: 13px; font-weight: 400; color: var(--soft); }
+.luka-planDescription { margin-top: 12px !important; min-height: 3.8em; font-size: 13px; line-height: 1.9; color: var(--soft); }
 .luka-price { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px; margin-top: 22px !important; font-family: var(--serif); font-size: clamp(31px, 3.6vw, 45px); line-height: 1.2; font-variant-numeric: lining-nums tabular-nums; letter-spacing: -0.025em; }
 .luka-priceUnit { font-family: var(--sans); font-size: 12px; letter-spacing: 0; white-space: nowrap; }
 .luka-priceUnit > span { font-size: 11px; color: var(--muted); }
 .luka-taxNote { font-family: var(--sans); font-size: 11px; color: var(--muted); margin-top: 12px !important; }
-.luka-unitPrice { font-size: 12px; color: var(--soft); margin-top: 8px !important; }
-.luka-onlinePlan { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; align-items: center; margin-top: 30px; }
-.luka-onlineDescription { font-size: 13px; color: var(--muted); }
 
 .luka-contactLinks { border-top: 1px solid var(--line); }
 .luka-contactLinks a { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 12px; border-bottom: 1px solid var(--line); padding-block: 25px; transition: color 0.2s; }
@@ -617,9 +568,6 @@ export default function HomePage() {
   .luka-planTitle { font-size: 13px; }
   .luka-price { font-size: 40px; margin-top: 15px !important; }
   .luka-taxNote { margin-top: 8px !important; }
-  .luka-onlinePlan { grid-template-columns: 1fr; gap: 0; margin-top: 12px; }
-  .luka-onlinePlan .luka-plan { border-top: none; }
-  .luka-onlineDescription { font-size: 12px; }
   .luka-contactLinks a { gap: 14px; }
   .luka-legalList > div { grid-template-columns: 1fr; gap: 8px; font-size: 12px; }
 }
