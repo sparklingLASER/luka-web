@@ -46,6 +46,19 @@ const runningPlans = [
     taxPrice: "40000",
   },
   {
+    title: "月8回",
+    description: "皇居ラン8回",
+    taxPrice: "70400",
+  },
+  {
+    title: "月12回",
+    description: "皇居ラン12回",
+    taxPrice: "99000",
+  },
+];
+
+const onlinePlans = [
+  {
     title: "月4回",
     description: "オンラインミーティング４回・食事案内・トレーニングメニュー作成",
     taxPrice: "33000",
@@ -85,6 +98,7 @@ const styles = {
   "navigation": "luka-navigation",
   "navigationOpen": "luka-navigationOpen",
   "note": "luka-note",
+  "onlinePlanGrid": "luka-onlinePlanGrid",
   "plan": "luka-plan",
   "planGrid": "luka-planGrid",
   "planTitle": "luka-planTitle",
@@ -139,11 +153,17 @@ function PlanItem({ plan, unit }) {
     <article className={styles.plan}>
       <h4 className={styles.planTitle}>{plan.title}</h4>
       <p className={styles.planDescription}>{plan.description}</p>
-      <p className={styles.price}>
-        <span>{plan.taxPrice}</span>
-        <span className={styles.priceUnit}>円<span> / {unit}</span></span>
-      </p>
-      <p className={styles.taxNote}>税込</p>
+      {plan.taxPrice !== null ? (
+        <>
+          <p className={styles.price}>
+            <span>{plan.taxPrice}</span>
+            <span className={styles.priceUnit}>円<span> / {unit}</span></span>
+          </p>
+          <p className={styles.taxNote}>税込</p>
+        </>
+      ) : (
+        <p className={styles.note}>料金はお問い合わせください</p>
+      )}
     </article>
   );
 }
@@ -319,12 +339,24 @@ export default function HomePage() {
             </div>
             <div className={styles.priceGroup}>
               <div className={styles.priceGroupHeading}>
-                <h3>月4回プラン</h3>
+                <h3>皇居ランプラン</h3>
                 <span className={styles.categoryLabel}>Subscription</span>
               </div>
               <p className={styles.note}>サブスクリプション / 月額プラン</p>
               <div className={styles.planGrid}>
                 {runningPlans.map((plan) => (
+                  <PlanItem key={plan.description} plan={plan} unit="月" />
+                ))}
+              </div>
+            </div>
+            <div className={styles.priceGroup}>
+              <div className={styles.priceGroupHeading}>
+                <h3>オンライントレーニング</h3>
+                <span className={styles.categoryLabel}>Online</span>
+              </div>
+              <p className={styles.note}>サブスクリプション / 月額プラン</p>
+              <div className={`${styles.planGrid} ${styles.onlinePlanGrid}`}>
+                {onlinePlans.map((plan) => (
                   <PlanItem key={plan.description} plan={plan} unit="月" />
                 ))}
               </div>
@@ -490,9 +522,10 @@ export default function HomePage() {
 .luka-priceGroupHeading { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; border-top: 1px solid var(--line); padding-top: 23px; }
 .luka-priceGroupHeading h3 { font-family: var(--serif); font-size: 23px; font-weight: 400; line-height: 1.5; }
 .luka-categoryLabel { font-family: var(--mono); text-transform: uppercase; font-size: 10px; letter-spacing: 0.07em; color: var(--muted); }
-.luka-planGrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 30px; }
+.luka-planGrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px 0; margin-top: 30px; }
+.luka-onlinePlanGrid { grid-template-columns: 1fr; }
 .luka-plan { padding: 10px 24px 12px; border-left: 1px solid var(--line); }
-.luka-plan:first-child { border-left: none; padding-left: 0; }
+.luka-plan:nth-child(odd) { border-left: none; padding-left: 0; }
 .luka-planTitle { font-family: var(--mono); font-size: 13px; font-weight: 400; color: var(--soft); }
 .luka-planDescription { margin-top: 12px !important; min-height: 3.8em; font-size: 13px; line-height: 1.9; color: var(--soft); }
 .luka-price { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px; margin-top: 22px !important; font-family: var(--serif); font-size: clamp(31px, 3.6vw, 45px); line-height: 1.2; font-variant-numeric: lining-nums tabular-nums; letter-spacing: -0.025em; }
@@ -562,7 +595,7 @@ export default function HomePage() {
   .luka-priceGroup { margin-top: 44px; }
   .luka-priceGroupHeading h3 { font-size: 20px; }
   .luka-priceGroupHeading { flex-wrap: wrap; gap: 8px; }
-  .luka-planGrid { grid-template-columns: 1fr; margin-top: 12px; }
+  .luka-planGrid { grid-template-columns: 1fr; gap: 0; margin-top: 12px; }
   .luka-plan, .luka-plan:first-child { border-left: none; border-top: 1px solid var(--line); padding: 24px 0; }
   .luka-planGrid .luka-plan:first-child { border-top: none; }
   .luka-planTitle { font-size: 13px; }
