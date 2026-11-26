@@ -1,9 +1,7 @@
 export default function sitemap() {
-  const baseUrl = 'https://lukarunning.com';
-
   return [
     {
-      url: baseUrl,
+      url: 'https://lukarunning.com',
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 1,
